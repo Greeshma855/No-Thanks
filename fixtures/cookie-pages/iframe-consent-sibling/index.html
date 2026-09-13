@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Framed sibling consent actions</title>
+    <style>
+      body {
+        margin: 0;
+        font: 18px system-ui;
+      }
+      .layout {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        background: white;
+      }
+      .consent-copy {
+        padding: 45px;
+      }
+      .actions {
+        position: sticky;
+        bottom: 0;
+        display: flex;
+        gap: 12px;
+        padding: 22px;
+        background: #eef2ff;
+      }
+      button {
+        flex: 1;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <section class="consent-copy" role="dialog" aria-label="Cookie consent">
+        <h1>Your privacy choices</h1>
+        <p>Choose whether cookies may be used for analytics and advertising.</p>
+      </section>
+      <footer class="actions">
+        <button>Yes, I accept</button><button id="decline">No, thank you</button
+        ><button>Manage cookies</button>
+      </footer>
+    </div>
+    <script>
+      document.querySelector('#decline').addEventListener('click', () => {
+        document.body.dataset.consentState = 'rejected';
+        document.querySelector('.layout').remove();
+      });
+    </script>
+  </body>
+</html>

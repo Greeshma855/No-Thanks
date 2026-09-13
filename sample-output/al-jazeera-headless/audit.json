@@ -1,0 +1,950 @@
+{
+  "schemaVersion": 1,
+  "runId": "run-2026-09-13T19-29-45-823Z",
+  "steps": [
+    {
+      "step": 0,
+      "telemetry": {
+        "discoveryInitialPerceptionAt": "2026-09-13T19:29:50.501Z",
+        "perceptionCapturedAt": "2026-09-13T19:29:50.501Z",
+        "consentCandidateDetectedAt": "2026-09-13T19:29:50.501Z",
+        "frameCount": 1,
+        "screenshotHash": "adbe2de5ab894bc868ea7130ec8881d056b0ed7a60c3775fb49e285a88805f00",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": false
+      }
+    },
+    {
+      "step": 1,
+      "perception": {
+        "url": "https://www.aljazeera.com/",
+        "title": "Breaking News, World News and Video from Al Jazeera",
+        "capturedAt": "2026-09-13T19:29:50.501Z",
+        "bannerDetected": true,
+        "frames": [
+          {
+            "index": 0,
+            "url": "https://www.aljazeera.com/",
+            "name": "",
+            "accessible": true
+          }
+        ],
+        "containers": [
+          {
+            "id": "guardian-container-1",
+            "role": "region",
+            "text": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all",
+            "bounds": {
+              "x": 0,
+              "y": 4226,
+              "width": 1260,
+              "height": 0
+            },
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "scrollTop": 0,
+            "scrollHeight": 0,
+            "clientHeight": 0,
+            "scrollable": false
+          }
+        ],
+        "elements": [
+          {
+            "id": "guardian-element-1",
+            "role": "link",
+            "name": "More information about your privacy, opens in a new tab",
+            "label": "You rely on Al Jazeera for truth and transparency",
+            "bounds": {
+              "x": 368,
+              "y": 501,
+              "width": 211,
+              "height": 15
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "href": "https://privacy.aljazeera.net/cookie/"
+          },
+          {
+            "id": "guardian-element-2",
+            "role": "button",
+            "name": "Cookie preferences, Opens the preference center dialog",
+            "label": "",
+            "bounds": {
+              "x": 1020,
+              "y": 498,
+              "width": 200,
+              "height": 32
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-3",
+            "role": "button",
+            "name": "Allow all",
+            "label": "",
+            "bounds": {
+              "x": 1020,
+              "y": 456,
+              "width": 200,
+              "height": 32
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          }
+        ],
+        "sanitizedText": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all"
+      },
+      "screenshotBefore": "raw/screenshots/01-before.png",
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T19:29:50.501Z",
+        "consentCandidateDetectedAt": "2026-09-13T19:29:50.501Z",
+        "frameCount": 1,
+        "screenshotHash": "adbe2de5ab894bc868ea7130ec8881d056b0ed7a60c3775fb49e285a88805f00",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": true,
+        "imageAttachedToOpenAIRequest": false,
+        "modelInputConsentFingerprint": "c204ab8af2962ca47ca3245a4f129c6a0d88bd9ced5187b5df4e5914603c55db",
+        "modelStartedAt": "2026-09-13T19:29:50.741Z",
+        "modelCompletedAt": "2026-09-13T19:29:50.785Z",
+        "postDecisionPerceptionAt": "2026-09-13T19:29:50.820Z",
+        "postDecisionConsentFingerprint": "c204ab8af2962ca47ca3245a4f129c6a0d88bd9ced5187b5df4e5914603c55db",
+        "postDecisionScreenshotHash": "adbe2de5ab894bc868ea7130ec8881d056b0ed7a60c3775fb49e285a88805f00",
+        "postDecisionScreenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        }
+      },
+      "screenshotAfter": "raw/screenshots/01-after.png",
+      "decision": {
+        "bannerDetected": true,
+        "darkPatterns": [
+          "ASYMMETRIC_EMPHASIS",
+          "HIDDEN_REJECTION",
+          "MULTI_LAYERED_CONSENT"
+        ],
+        "summary": "Open the consent preferences to find strict rejection controls.",
+        "confidence": 0.96,
+        "action": {
+          "type": "OPEN_PREFERENCES",
+          "elementId": "guardian-element-2"
+        }
+      },
+      "safetyValidation": {
+        "allowed": true,
+        "reason": "action is narrowly scoped to consent rejection"
+      },
+      "action": {
+        "step": 1,
+        "action": "OPEN_PREFERENCES",
+        "elementId": "guardian-element-2",
+        "success": true,
+        "detail": "action is narrowly scoped to consent rejection"
+      },
+      "verification": {
+        "level": "UNVERIFIED",
+        "evidence": {
+          "explicitRejectActionSucceeded": false,
+          "bannerGone": false,
+          "successMessage": false,
+          "togglesRejected": false,
+          "saveActionSucceeded": false,
+          "persistedAfterRefresh": false,
+          "storageIndicatesRejection": false,
+          "details": []
+        }
+      },
+      "continuation": "Continued with re-perception to detect another consent layer or confirm completion."
+    },
+    {
+      "step": 2,
+      "perception": {
+        "url": "https://www.aljazeera.com/",
+        "title": "Breaking News, World News and Video from Al Jazeera",
+        "capturedAt": "2026-09-13T19:29:51.457Z",
+        "bannerDetected": true,
+        "frames": [
+          {
+            "index": 0,
+            "url": "https://www.aljazeera.com/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 1,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          }
+        ],
+        "containers": [
+          {
+            "id": "guardian-container-1",
+            "role": "region",
+            "text": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all Privacy Preference Center To provide you with the best Al Jazeera digital experience possible, we use information about your past and present engagement with our site and services. It includes things like how often you visit our site and what type of content you usually like to view. We use this information to present you with more relevant content, make business and programming decisions, and deliver personalized advertisements for things that you might like. The categories of information we collect are explained below. We recommend that you allow us to use all this information to get the most out of our digital content. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies, as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please see our Cookie Policy. View Our Cookie Policy Manage Consent Preferences Strictly Necessary Cookies Always Active Performance Cookies - First Party Always Active Performance Cookies - Third Parties Functional Cookies Targeting Cookies Social Media Cookies Confirm My Choices",
+            "bounds": {
+              "x": 0,
+              "y": 4226,
+              "width": 1260,
+              "height": 0
+            },
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "scrollTop": 0,
+            "scrollHeight": 0,
+            "clientHeight": 0,
+            "scrollable": false
+          },
+          {
+            "id": "guardian-container-2",
+            "role": "scroll-region",
+            "text": "Privacy Preference Center To provide you with the best Al Jazeera digital experience possible, we use information about your past and present engagement with our site and services. It includes things like how often you visit our site and what type of content you usually like to view. We use this information to present you with more relevant content, make business and programming decisions, and deliver personalized advertisements for things that you might like. The categories of information we collect are explained below. We recommend that you allow us to use all this information to get the most out of our digital content. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies, as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please see our Cookie Policy. View Our Cookie Policy Manage Consent Preferences Strictly Necessary Cookies Always Active Performance Cookies - First Party Always Active Performance Cookies - Third Parties Functional Cookies Targeting Cookies Social Media Cookies",
+            "bounds": {
+              "x": 359,
+              "y": 43,
+              "width": 556,
+              "height": 338
+            },
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "scrollTop": 0,
+            "scrollHeight": 850,
+            "clientHeight": 338,
+            "scrollable": true
+          }
+        ],
+        "elements": [
+          {
+            "id": "guardian-element-4",
+            "role": "checkbox",
+            "name": "Performance Cookies - Third Parties",
+            "label": "Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties",
+            "bounds": {
+              "x": 845,
+              "y": 685,
+              "width": 45,
+              "height": 25
+            },
+            "checked": true,
+            "categoryLabel": "Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties",
+            "visible": false,
+            "disabled": false,
+            "kind": "checkbox",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-5",
+            "role": "checkbox",
+            "name": "Functional Cookies",
+            "label": "Functional Cookies Functional Cookies Functional Cookies Functional Cookies Functional Cookies Functional Cookies",
+            "bounds": {
+              "x": 845,
+              "y": 737,
+              "width": 45,
+              "height": 25
+            },
+            "checked": true,
+            "categoryLabel": "Functional Cookies Functional Cookies Functional Cookies",
+            "visible": false,
+            "disabled": false,
+            "kind": "checkbox",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-6",
+            "role": "checkbox",
+            "name": "Targeting Cookies",
+            "label": "Targeting Cookies Targeting Cookies Targeting Cookies Targeting Cookies Targeting Cookies Targeting Cookies",
+            "bounds": {
+              "x": 845,
+              "y": 790,
+              "width": 45,
+              "height": 25
+            },
+            "checked": true,
+            "categoryLabel": "Targeting Cookies Targeting Cookies Targeting Cookies",
+            "visible": false,
+            "disabled": false,
+            "kind": "checkbox",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-7",
+            "role": "checkbox",
+            "name": "Social Media Cookies",
+            "label": "Social Media Cookies Social Media Cookies Social Media Cookies Social Media Cookies Social Media Cookies Social Media Cookies",
+            "bounds": {
+              "x": 845,
+              "y": 842,
+              "width": 45,
+              "height": 25
+            },
+            "checked": true,
+            "categoryLabel": "Social Media Cookies Social Media Cookies Social Media Cookies",
+            "visible": false,
+            "disabled": false,
+            "kind": "checkbox",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-1",
+            "role": "link",
+            "name": "More information about your privacy, opens in a new tab",
+            "label": "You rely on Al Jazeera for truth and transparency",
+            "bounds": {
+              "x": 368,
+              "y": 501,
+              "width": 211,
+              "height": 15
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "href": "https://privacy.aljazeera.net/cookie/"
+          },
+          {
+            "id": "guardian-element-2",
+            "role": "button",
+            "name": "Cookie preferences, Opens the preference center dialog",
+            "label": "",
+            "bounds": {
+              "x": 1020,
+              "y": 498,
+              "width": 200,
+              "height": 32
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-3",
+            "role": "button",
+            "name": "Allow all",
+            "label": "",
+            "bounds": {
+              "x": 1020,
+              "y": 456,
+              "width": 200,
+              "height": 32
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-8",
+            "role": "button",
+            "name": "Close preference center",
+            "label": "",
+            "bounds": {
+              "x": 870,
+              "y": 37,
+              "width": 44,
+              "height": 44
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-9",
+            "role": "link",
+            "name": "More information about your privacy, opens in a new tab",
+            "label": "",
+            "bounds": {
+              "x": 361,
+              "y": 465,
+              "width": 153,
+              "height": 18
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "href": "https://privacy.aljazeera.net/cookie/"
+          },
+          {
+            "id": "guardian-element-10",
+            "role": "button",
+            "name": "Strictly Necessary Cookies Always Active Strictly Necessary Cookies Always Active",
+            "label": "Strictly Necessary Cookies Always Active Strictly Necessary Cookies Always Active",
+            "bounds": {
+              "x": 362,
+              "y": 577,
+              "width": 536,
+              "height": 47
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-11",
+            "role": "button",
+            "name": "Performance Cookies - First Party Always Active Performance Cookies - First Party Always Active",
+            "label": "Performance Cookies - First Party Always Active Performance Cookies - First Party Always Active",
+            "bounds": {
+              "x": 362,
+              "y": 625,
+              "width": 536,
+              "height": 47
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-12",
+            "role": "button",
+            "name": "Performance Cookies - Third Parties Performance Cookies - Third Parties",
+            "label": "Performance Cookies - Third Parties Performance Cookies - Third Parties",
+            "bounds": {
+              "x": 362,
+              "y": 674,
+              "width": 536,
+              "height": 51
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-13",
+            "role": "button",
+            "name": "Functional Cookies Functional Cookies",
+            "label": "Functional Cookies Functional Cookies",
+            "bounds": {
+              "x": 362,
+              "y": 726,
+              "width": 536,
+              "height": 51
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-14",
+            "role": "button",
+            "name": "Targeting Cookies Targeting Cookies",
+            "label": "Targeting Cookies Targeting Cookies",
+            "bounds": {
+              "x": 362,
+              "y": 779,
+              "width": 536,
+              "height": 51
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-15",
+            "role": "button",
+            "name": "Social Media Cookies Social Media Cookies",
+            "label": "Social Media Cookies Social Media Cookies",
+            "bounds": {
+              "x": 362,
+              "y": 831,
+              "width": 536,
+              "height": 51
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-16",
+            "role": "button",
+            "name": "Confirm My Choices",
+            "label": "",
+            "bounds": {
+              "x": 361,
+              "y": 398,
+              "width": 539,
+              "height": 45
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          }
+        ],
+        "sanitizedText": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all Privacy Preference Center To provide you with the best Al Jazeera digital experience possible, we use information about your past and present engagement with our site and services. It includes things like how often you visit our site and what type of content you usually like to view. We use this information to present you with more relevant content, make business and programming decisions, and deliver personalized advertisements for things that you might like. The categories of information we collect are explained below. We recommend that you allow us to use all this information to get the most out of our digital content. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies, as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please see our Cookie Policy. View Our Cookie Policy Manage Consent Preferences Strictly Necessary Cookies Always Active Performance Cookies - First Party Always Active Performance Cookies - Third Parties Functional Cookies Targeting Cookies Social Media Cookies Confirm My Choices | Privacy Preference Center To provide you with the best Al Jazeera digital experience possible, we use information about your past and present engagement with our site and services. It includes things like how often you visit our site and what type of content you usually like to view. We use this information to present you with more relevant content, make business and programming decisions, and deliver personalized advertisements for things that you might like. The categories of information we collect are explained below. We recommend that you allow us to use all this information to get the most out of our digital content. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies, as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please see our Cookie Policy. View Our Cookie Policy Manage Consent Preferences Strictly Necessary Cookies Always Active Performance Cookies - First Party Always Active Performance Cookies - Third Parties Functional Cookies Targeting Cookies Social Media Cookies"
+      },
+      "screenshotBefore": "raw/screenshots/02-before.png",
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T19:29:51.457Z",
+        "frameCount": 2,
+        "screenshotHash": "d377ab7dd9cbae8120bdb9def474436f5d6d981ba1ab10934c31c52218fc6bc0",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": true,
+        "imageAttachedToOpenAIRequest": false,
+        "modelInputConsentFingerprint": "9ce5c7a0eee1ec184e95a60fd51f76bf596fc6b7f9cb9bb1d51f7cc7707a4272",
+        "modelStartedAt": "2026-09-13T19:29:51.726Z",
+        "modelCompletedAt": "2026-09-13T19:29:51.738Z",
+        "postDecisionPerceptionAt": "2026-09-13T19:29:51.783Z",
+        "postDecisionConsentFingerprint": "9ce5c7a0eee1ec184e95a60fd51f76bf596fc6b7f9cb9bb1d51f7cc7707a4272",
+        "postDecisionScreenshotHash": "df97b7d25b7f6ff6397e8cf575bcc8d1e403e5d9ad1e05ed01468ba570028f18",
+        "postDecisionScreenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        }
+      },
+      "screenshotAfter": "raw/screenshots/02-after.png",
+      "decision": {
+        "bannerDetected": true,
+        "darkPatterns": [
+          "ASYMMETRIC_EMPHASIS",
+          "HIDDEN_REJECTION",
+          "MULTI_LAYERED_CONSENT",
+          "PRESELECTED_TRACKING"
+        ],
+        "summary": "Disable 4 preselected non-essential consent control(s) and confirm the choices.",
+        "confidence": 0.98,
+        "action": {
+          "type": "SET_CONSENT_TOGGLES",
+          "targets": [
+            {
+              "elementId": "guardian-element-4",
+              "desiredState": false
+            },
+            {
+              "elementId": "guardian-element-5",
+              "desiredState": false
+            },
+            {
+              "elementId": "guardian-element-6",
+              "desiredState": false
+            },
+            {
+              "elementId": "guardian-element-7",
+              "desiredState": false
+            }
+          ],
+          "saveElementId": "guardian-element-16"
+        }
+      },
+      "safetyValidation": {
+        "allowed": true,
+        "reason": "batch contains only registered non-essential consent toggles"
+      },
+      "action": {
+        "step": 2,
+        "action": "SET_CONSENT_TOGGLES",
+        "targets": [
+          {
+            "elementId": "guardian-element-4",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-5",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-6",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-7",
+            "desiredState": false
+          }
+        ],
+        "saveElementId": "guardian-element-16",
+        "confirmedToggleIds": [
+          "guardian-element-4",
+          "guardian-element-5",
+          "guardian-element-6",
+          "guardian-element-7"
+        ],
+        "success": true,
+        "detail": "Confirmed 4 non-essential toggle(s) off and saved the choices."
+      },
+      "verification": {
+        "level": "LIKELY_VERIFIED",
+        "evidence": {
+          "explicitRejectActionSucceeded": false,
+          "bannerGone": true,
+          "successMessage": false,
+          "togglesRejected": true,
+          "saveActionSucceeded": true,
+          "persistedAfterRefresh": false,
+          "storageIndicatesRejection": false,
+          "details": [
+            "Consent interface disappeared.",
+            "Visible non-essential toggles are disabled.",
+            "Privacy choices were saved after toggle confirmation."
+          ]
+        }
+      },
+      "continuation": "Continued with re-perception to detect another consent layer or confirm completion."
+    },
+    {
+      "step": 3,
+      "perception": {
+        "url": "https://www.aljazeera.com/",
+        "title": "Breaking News, World News and Video from Al Jazeera",
+        "capturedAt": "2026-09-13T19:29:54.818Z",
+        "bannerDetected": false,
+        "frames": [
+          {
+            "index": 0,
+            "url": "https://www.aljazeera.com/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 1,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 2,
+            "url": "https://www.recaptcha.net/recaptcha/enterprise/anchor",
+            "name": "a-xe9ybaph3jx",
+            "accessible": true
+          },
+          {
+            "index": 3,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          }
+        ],
+        "containers": [],
+        "elements": [],
+        "sanitizedText": ""
+      },
+      "screenshotBefore": "raw/screenshots/03-before.png",
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T19:29:54.818Z",
+        "frameCount": 4,
+        "screenshotHash": "edf5d7c4bf80d132fa32378407a63be4014d3d67257213ed3f3c665eec78c09c",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": true,
+        "imageAttachedToOpenAIRequest": false,
+        "modelInputConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+        "modelStartedAt": "2026-09-13T19:29:55.132Z",
+        "modelCompletedAt": "2026-09-13T19:29:55.148Z",
+        "postDecisionPerceptionAt": "2026-09-13T19:29:55.243Z",
+        "postDecisionConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+        "postDecisionScreenshotHash": "edf5d7c4bf80d132fa32378407a63be4014d3d67257213ed3f3c665eec78c09c",
+        "postDecisionScreenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        }
+      },
+      "screenshotAfter": "raw/screenshots/03-after.png",
+      "decision": {
+        "bannerDetected": false,
+        "darkPatterns": [
+          "NONE"
+        ],
+        "summary": "No visible cookie-consent interface remains.",
+        "confidence": 0.99,
+        "action": {
+          "type": "NO_BANNER"
+        }
+      },
+      "safetyValidation": {
+        "allowed": true,
+        "reason": "non-interactive terminal action"
+      },
+      "continuation": "Stopped because no further consent action was required."
+    },
+    {
+      "step": 4,
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T19:29:59.316Z",
+        "postDecisionPerceptionAt": "2026-09-13T19:29:59.316Z",
+        "frameCount": 1,
+        "screenshotHash": "28c1d7a97503ed020b9eb6c8eb9641e455a4ec67ba3400c5a39440144eed7ae1",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": false,
+        "imageAttachedToOpenAIRequest": false,
+        "postDecisionConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431"
+      },
+      "verification": {
+        "level": "LIKELY_VERIFIED",
+        "evidence": {
+          "explicitRejectActionSucceeded": false,
+          "bannerGone": true,
+          "successMessage": false,
+          "togglesRejected": true,
+          "saveActionSucceeded": true,
+          "persistedAfterRefresh": false,
+          "storageIndicatesRejection": false,
+          "details": [
+            "Consent interface disappeared.",
+            "Visible non-essential toggles are disabled.",
+            "Privacy choices were saved after toggle confirmation."
+          ]
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "initialState": {
+    "url": "https://www.aljazeera.com/",
+    "title": "Breaking News, World News and Video from Al Jazeera",
+    "capturedAt": "2026-09-13T19:29:50.501Z",
+    "bannerDetected": true,
+    "frames": [
+      {
+        "index": 0,
+        "url": "https://www.aljazeera.com/",
+        "name": "",
+        "accessible": true
+      }
+    ],
+    "containers": [
+      {
+        "id": "guardian-container-1",
+        "role": "region",
+        "text": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all",
+        "bounds": {
+          "x": 0,
+          "y": 4226,
+          "width": 1260,
+          "height": 0
+        },
+        "frameIndex": 0,
+        "frameUrl": "https://www.aljazeera.com/",
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "scrollable": false
+      }
+    ],
+    "elements": [
+      {
+        "id": "guardian-element-1",
+        "role": "link",
+        "name": "More information about your privacy, opens in a new tab",
+        "label": "You rely on Al Jazeera for truth and transparency",
+        "bounds": {
+          "x": 368,
+          "y": 501,
+          "width": 211,
+          "height": 15
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "link",
+        "containerId": "guardian-container-1",
+        "frameIndex": 0,
+        "frameUrl": "https://www.aljazeera.com/",
+        "href": "https://privacy.aljazeera.net/cookie/"
+      },
+      {
+        "id": "guardian-element-2",
+        "role": "button",
+        "name": "Cookie preferences, Opens the preference center dialog",
+        "label": "",
+        "bounds": {
+          "x": 1020,
+          "y": 498,
+          "width": 200,
+          "height": 32
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-1",
+        "frameIndex": 0,
+        "frameUrl": "https://www.aljazeera.com/"
+      },
+      {
+        "id": "guardian-element-3",
+        "role": "button",
+        "name": "Allow all",
+        "label": "",
+        "bounds": {
+          "x": 1020,
+          "y": 456,
+          "width": 200,
+          "height": 32
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-1",
+        "frameIndex": 0,
+        "frameUrl": "https://www.aljazeera.com/"
+      }
+    ],
+    "sanitizedText": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all"
+  },
+  "initialScreenshot": "raw/screenshots/00-initial.png",
+  "finalScreenshot": "raw/screenshots/04-final.png",
+  "finalState": {
+    "url": "https://www.aljazeera.com/",
+    "title": "Breaking News, World News and Video from Al Jazeera",
+    "capturedAt": "2026-09-13T19:29:59.316Z",
+    "bannerDetected": false,
+    "frames": [
+      {
+        "index": 0,
+        "url": "https://www.aljazeera.com/",
+        "name": "",
+        "accessible": true
+      }
+    ],
+    "containers": [],
+    "elements": [],
+    "sanitizedText": ""
+  },
+  "report": {
+    "startedAt": "2026-09-13T19:29:45.822Z",
+    "completedAt": "2026-09-13T19:29:59.424Z",
+    "url": "https://www.aljazeera.com/",
+    "provider": "mock",
+    "mode": "guardian",
+    "displayProfile": "custom",
+    "viewport": {
+      "width": 1260,
+      "height": 540
+    },
+    "bannerDetected": true,
+    "finalBannerDetected": false,
+    "finalStateCapturedAt": "2026-09-13T19:29:59.316Z",
+    "finalConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+    "darkPatterns": [
+      "ASYMMETRIC_EMPHASIS",
+      "HIDDEN_REJECTION",
+      "MULTI_LAYERED_CONSENT",
+      "PRESELECTED_TRACKING"
+    ],
+    "actions": [
+      {
+        "step": 1,
+        "action": "OPEN_PREFERENCES",
+        "elementId": "guardian-element-2",
+        "success": true,
+        "detail": "action is narrowly scoped to consent rejection"
+      },
+      {
+        "step": 2,
+        "action": "SET_CONSENT_TOGGLES",
+        "targets": [
+          {
+            "elementId": "guardian-element-4",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-5",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-6",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-7",
+            "desiredState": false
+          }
+        ],
+        "saveElementId": "guardian-element-16",
+        "confirmedToggleIds": [
+          "guardian-element-4",
+          "guardian-element-5",
+          "guardian-element-6",
+          "guardian-element-7"
+        ],
+        "success": true,
+        "detail": "Confirmed 4 non-essential toggle(s) off and saved the choices."
+      }
+    ],
+    "safetyStops": [],
+    "verification": {
+      "level": "LIKELY_VERIFIED",
+      "evidence": {
+        "explicitRejectActionSucceeded": false,
+        "bannerGone": true,
+        "successMessage": false,
+        "togglesRejected": true,
+        "saveActionSucceeded": true,
+        "persistedAfterRefresh": false,
+        "storageIndicatesRejection": false,
+        "details": [
+          "Consent interface disappeared.",
+          "Visible non-essential toggles are disabled.",
+          "Privacy choices were saved after toggle confirmation."
+        ]
+      }
+    },
+    "artifactDirectory": "C:\\Users\\Greeshma\\OneDrive\\Desktop\\dark-pattern-guardian\\artifacts\\run-2026-09-13T19-29-45-823Z"
+  }
+}

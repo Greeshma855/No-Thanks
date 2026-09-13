@@ -1,0 +1,8 @@
+dist
+node_modules
+artifacts
+package-lock.json
+sample-output/**/audit.json
+sample-output/**/raw
+sample-output/**/recording.webm
+sample-output/**/report.html

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sticky consent action bar</title>
+    <style>
+      body {
+        margin: 0;
+        font: 17px system-ui;
+      }
+      main {
+        min-height: 100vh;
+        padding: 60px;
+        background: #f8fafc;
+      }
+      .consent-copy {
+        position: fixed;
+        inset: auto 0 82px;
+        padding: 25px 40px;
+        background: white;
+      }
+      consent-actions {
+        position: fixed;
+        inset: auto 0 0;
+        height: 82px;
+      }
+    </style>
+  </head>
+  <body data-consent-state="pending">
+    <main><h1>Independent journalism</h1></main>
+    <section class="consent-copy" role="dialog" aria-label="Privacy notice">
+      We use cookies for audience analytics and advertising. Choose how your data is used.
+    </section>
+    <consent-actions></consent-actions>
+    <script>
+      const actions = document.querySelector('consent-actions').attachShadow({ mode: 'open' });
+      actions.innerHTML = `<style>:host{display:block}.action-bar{display:flex;gap:16px;padding:16px 40px;background:#172554}button{flex:1;padding:14px}</style><footer class="action-bar"><button>Accept all</button><button id="no-thanks">No thanks</button><button>Manage choices</button></footer>`;
+      actions.querySelector('#no-thanks').addEventListener('click', () => {
+        document.body.dataset.consentState = 'rejected';
+        document.querySelector('.consent-copy').remove();
+        document.querySelector('consent-actions').remove();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Fern & Field</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font: 16px system-ui;
+        background: #e9f0e4;
+        color: #183021;
+      }
+      main {
+        min-height: 100vh;
+        padding: 10vh 12%;
+        background: radial-gradient(circle at 80% 10%, #b8d3a9, transparent 35%);
+      }
+      h1 {
+        font-size: 70px;
+        max-width: 700px;
+      }
+      .banner {
+        position: fixed;
+        inset: auto 24px 24px auto;
+        width: 420px;
+        background: #fffaf0;
+        padding: 28px;
+        border: 3px solid #173f2b;
+        box-shadow: 10px 10px 0 #173f2b;
+      }
+      .banner button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 14px;
+        border: 2px solid #173f2b;
+        background: white;
+      }
+      .banner .accept {
+        background: #173f2b;
+        color: white;
+        font-size: 18px;
+      }
+      .modal {
+        position: fixed;
+        inset: 0;
+        background: #0008;
+        display: grid;
+        place-items: center;
+      }
+      .panel {
+        background: white;
+        border-radius: 24px;
+        width: min(560px, 90vw);
+        padding: 32px;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      .save {
+        margin-top: 24px;
+        padding: 14px 25px;
+        background: #173f2b;
+        color: white;
+        border: 0;
+        border-radius: 30px;
+      }
+      [hidden] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body data-consent-state="pending">
+    <main>
+      <small>FERN & FIELD / BOTANICAL NOTES</small>
+      <h1>Make room for something wild.</h1>
+    </main>
+    <section class="banner" data-cookie-banner role="dialog" aria-label="Cookie notice">
+      <h2>A greener web experience</h2>
+      <p>Cookies help us personalize content and measure visits.</p>
+      <button>Manage Preferences</button><button class="accept">Accept All</button>
+    </section>
+    <section
+      class="modal"
+      id="privacy-settings"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Privacy preferences"
+      hidden
+    >
+      <div class="panel">
+        <h2>Privacy preferences</h2>
+        <p>Choose which cookie categories may be stored.</p>
+        <label class="row" for="necessary"
+          >Necessary cookies <input id="necessary" type="checkbox" checked disabled /></label
+        ><label class="row" for="analytics"
+          >Analytics cookies <input id="analytics" type="checkbox" /></label
+        ><label class="row" for="ads">Advertising cookies <input id="ads" type="checkbox" /></label
+        ><button class="save">Save Privacy Choices</button>
+      </div>
+    </section>
+    <script>
+      const banner = document.querySelector('.banner'),
+        modal = document.querySelector('.modal');
+      if (localStorage.getItem('guardianConsent') === 'rejected') {
+        banner.remove();
+        modal.remove();
+        document.body.dataset.consentState = 'rejected';
+      }
+      document.querySelector('.banner button')?.addEventListener('click', () => {
+        banner.hidden = true;
+        modal.hidden = false;
+      });
+      document.querySelector('.save')?.addEventListener('click', () => {
+        localStorage.setItem('guardianConsent', 'rejected');
+        document.body.dataset.consentState = 'rejected';
+        modal.remove();
+        banner.remove();
+      });
+      document.querySelector('.accept')?.addEventListener('click', () => {
+        localStorage.setItem('guardianConsent', 'accepted');
+        document.body.dataset.consentState = 'accepted';
+        banner.remove();
+      });
+    </script>
+  </body>
+</html>

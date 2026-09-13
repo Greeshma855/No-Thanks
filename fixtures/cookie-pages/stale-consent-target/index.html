@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Changing consent target</title>
+  </head>
+  <body data-consent-state="pending">
+    <section data-cookie-banner role="dialog" aria-label="Cookie choices">
+      <p>Choose whether cookies may be used for advertising.</p>
+      <button id="reject">Reject all</button><button>Accept all</button>
+    </section>
+    <script>
+      setTimeout(() => {
+        const replacement = document.createElement('button');
+        replacement.textContent = 'Learn more';
+        document.querySelector('#reject')?.replaceWith(replacement);
+      }, 300);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,3878 @@
+{
+  "schemaVersion": 1,
+  "runId": "run-2026-09-13T18-42-59-907Z",
+  "steps": [
+    {
+      "step": 0,
+      "telemetry": {
+        "discoveryInitialPerceptionAt": "2026-09-13T18:43:03.240Z",
+        "perceptionCapturedAt": "2026-09-13T18:43:03.240Z",
+        "consentCandidateDetectedAt": "2026-09-13T18:43:03.240Z",
+        "frameCount": 1,
+        "screenshotHash": "2b765e1776396b79dc292aa9bd4022a3edadb09aeb366f4e2370f5a63a502445",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": false
+      }
+    },
+    {
+      "step": 1,
+      "perception": {
+        "url": "https://www.aljazeera.com/",
+        "title": "Breaking News, World News and Video from Al Jazeera",
+        "capturedAt": "2026-09-13T18:43:03.240Z",
+        "bannerDetected": true,
+        "frames": [
+          {
+            "index": 0,
+            "url": "https://www.aljazeera.com/",
+            "name": "",
+            "accessible": true
+          }
+        ],
+        "containers": [
+          {
+            "id": "guardian-container-1",
+            "role": "region",
+            "text": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all",
+            "bounds": {
+              "x": 0,
+              "y": 4246,
+              "width": 1246,
+              "height": 0
+            },
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "scrollTop": 0,
+            "scrollHeight": 0,
+            "clientHeight": 0,
+            "scrollable": false
+          }
+        ],
+        "elements": [
+          {
+            "id": "guardian-element-1",
+            "role": "link",
+            "name": "More information about your privacy, opens in a new tab",
+            "label": "You rely on Al Jazeera for truth and transparency",
+            "bounds": {
+              "x": 360,
+              "y": 502,
+              "width": 211,
+              "height": 15
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "href": "https://privacy.aljazeera.net/cookie/"
+          },
+          {
+            "id": "guardian-element-2",
+            "role": "button",
+            "name": "Cookie preferences, Opens the preference center dialog",
+            "label": "",
+            "bounds": {
+              "x": 1013,
+              "y": 499,
+              "width": 200,
+              "height": 32
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-3",
+            "role": "button",
+            "name": "Allow all",
+            "label": "",
+            "bounds": {
+              "x": 1013,
+              "y": 457,
+              "width": 200,
+              "height": 32
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          }
+        ],
+        "sanitizedText": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all"
+      },
+      "screenshotBefore": "raw/screenshots/01-before.png",
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T18:43:03.240Z",
+        "consentCandidateDetectedAt": "2026-09-13T18:43:03.240Z",
+        "frameCount": 2,
+        "screenshotHash": "547541154b04368d6916647542f06a9991ce353a1bc20207b07a4e3535eb519c",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": true,
+        "imageAttachedToOpenAIRequest": false,
+        "modelInputConsentFingerprint": "c204ab8af2962ca47ca3245a4f129c6a0d88bd9ced5187b5df4e5914603c55db",
+        "modelStartedAt": "2026-09-13T18:43:04.314Z",
+        "modelCompletedAt": "2026-09-13T18:43:04.388Z",
+        "postDecisionPerceptionAt": "2026-09-13T18:43:04.468Z",
+        "postDecisionConsentFingerprint": "c204ab8af2962ca47ca3245a4f129c6a0d88bd9ced5187b5df4e5914603c55db",
+        "postDecisionScreenshotHash": "d6e4ab4a805cfbfc4843a9f40e6694177e99e55899556f1faae2ede6efc68ca4",
+        "postDecisionScreenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        }
+      },
+      "screenshotAfter": "raw/screenshots/01-after.png",
+      "decision": {
+        "bannerDetected": true,
+        "darkPatterns": [
+          "ASYMMETRIC_EMPHASIS",
+          "HIDDEN_REJECTION",
+          "MULTI_LAYERED_CONSENT"
+        ],
+        "summary": "Open the consent preferences to find strict rejection controls.",
+        "confidence": 0.96,
+        "action": {
+          "type": "OPEN_PREFERENCES",
+          "elementId": "guardian-element-2"
+        }
+      },
+      "safetyValidation": {
+        "allowed": true,
+        "reason": "action is narrowly scoped to consent rejection"
+      },
+      "action": {
+        "step": 1,
+        "action": "OPEN_PREFERENCES",
+        "elementId": "guardian-element-2",
+        "success": true,
+        "detail": "action is narrowly scoped to consent rejection"
+      },
+      "verification": {
+        "level": "UNVERIFIED",
+        "evidence": {
+          "explicitRejectActionSucceeded": false,
+          "bannerGone": false,
+          "successMessage": false,
+          "togglesRejected": false,
+          "saveActionSucceeded": false,
+          "persistedAfterRefresh": false,
+          "storageIndicatesRejection": false,
+          "details": []
+        }
+      },
+      "continuation": "Continued with re-perception to detect another consent layer or confirm completion."
+    },
+    {
+      "step": 2,
+      "perception": {
+        "url": "https://www.aljazeera.com/",
+        "title": "Breaking News, World News and Video from Al Jazeera",
+        "capturedAt": "2026-09-13T18:43:06.872Z",
+        "bannerDetected": true,
+        "frames": [
+          {
+            "index": 0,
+            "url": "https://www.aljazeera.com/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 1,
+            "url": "nullblank",
+            "name": "__pb_locator__",
+            "accessible": true
+          },
+          {
+            "index": 2,
+            "url": "https://cm.g.doubleclick.net/partnerpixels",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 3,
+            "url": "https://static.fsrv.io/load-cookie.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 4,
+            "url": "https://ads.pubmatic.com/AdServer/js/topics/topics_frame.html",
+            "name": "ifrm_pubmatic",
+            "accessible": true
+          },
+          {
+            "index": 5,
+            "url": "https://pa.openx.net/topics_frame.html",
+            "name": "ifrm_openx",
+            "accessible": true
+          },
+          {
+            "index": 6,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 7,
+            "url": "https://s.amazon-adsystem.com/iu3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 8,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 9,
+            "url": "https://s.amazon-adsystem.com/v3/pr",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 10,
+            "url": "",
+            "name": "",
+            "accessible": true
+          }
+        ],
+        "containers": [
+          {
+            "id": "guardian-container-1",
+            "role": "region",
+            "text": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all Privacy Preference Center To provide you with the best Al Jazeera digital experience possible, we use information about your past and present engagement with our site and services. It includes things like how often you visit our site and what type of content you usually like to view. We use this information to present you with more relevant content, make business and programming decisions, and deliver personalized advertisements for things that you might like. The categories of information we collect are explained below. We recommend that you allow us to use all this information to get the most out of our digital content. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies, as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please see our Cookie Policy. View Our Cookie Policy Manage Consent Preferences Strictly Necessary Cookies Always Active Performance Cookies - First Party Always Active Performance Cookies - Third Parties Functional Cookies Targeting Cookies Social Media Cookies Confirm My Choices",
+            "bounds": {
+              "x": 0,
+              "y": 4246,
+              "width": 1261,
+              "height": 0
+            },
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "scrollTop": 0,
+            "scrollHeight": 0,
+            "clientHeight": 0,
+            "scrollable": false
+          },
+          {
+            "id": "guardian-container-2",
+            "role": "scroll-region",
+            "text": "Privacy Preference Center To provide you with the best Al Jazeera digital experience possible, we use information about your past and present engagement with our site and services. It includes things like how often you visit our site and what type of content you usually like to view. We use this information to present you with more relevant content, make business and programming decisions, and deliver personalized advertisements for things that you might like. The categories of information we collect are explained below. We recommend that you allow us to use all this information to get the most out of our digital content. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies, as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please see our Cookie Policy. View Our Cookie Policy Manage Consent Preferences Strictly Necessary Cookies Always Active Performance Cookies - First Party Always Active Performance Cookies - Third Parties Functional Cookies Targeting Cookies Social Media Cookies",
+            "bounds": {
+              "x": 359,
+              "y": 43,
+              "width": 556,
+              "height": 338
+            },
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "scrollTop": 0,
+            "scrollHeight": 848,
+            "clientHeight": 338,
+            "scrollable": true
+          }
+        ],
+        "elements": [
+          {
+            "id": "guardian-element-4",
+            "role": "checkbox",
+            "name": "Performance Cookies - Third Parties",
+            "label": "Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties",
+            "bounds": {
+              "x": 834,
+              "y": 684,
+              "width": 45,
+              "height": 25
+            },
+            "checked": true,
+            "categoryLabel": "Performance Cookies - Third Parties Performance Cookies - Third Parties Performance Cookies - Third Parties",
+            "visible": false,
+            "disabled": false,
+            "kind": "checkbox",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-5",
+            "role": "checkbox",
+            "name": "Functional Cookies",
+            "label": "Functional Cookies Functional Cookies Functional Cookies Functional Cookies Functional Cookies Functional Cookies",
+            "bounds": {
+              "x": 834,
+              "y": 736,
+              "width": 45,
+              "height": 25
+            },
+            "checked": true,
+            "categoryLabel": "Functional Cookies Functional Cookies Functional Cookies",
+            "visible": false,
+            "disabled": false,
+            "kind": "checkbox",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-6",
+            "role": "checkbox",
+            "name": "Targeting Cookies",
+            "label": "Targeting Cookies Targeting Cookies Targeting Cookies Targeting Cookies Targeting Cookies Targeting Cookies",
+            "bounds": {
+              "x": 834,
+              "y": 788,
+              "width": 45,
+              "height": 25
+            },
+            "checked": true,
+            "categoryLabel": "Targeting Cookies Targeting Cookies Targeting Cookies",
+            "visible": false,
+            "disabled": false,
+            "kind": "checkbox",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-7",
+            "role": "checkbox",
+            "name": "Social Media Cookies",
+            "label": "Social Media Cookies Social Media Cookies Social Media Cookies Social Media Cookies Social Media Cookies Social Media Cookies",
+            "bounds": {
+              "x": 834,
+              "y": 840,
+              "width": 45,
+              "height": 25
+            },
+            "checked": true,
+            "categoryLabel": "Social Media Cookies Social Media Cookies Social Media Cookies",
+            "visible": false,
+            "disabled": false,
+            "kind": "checkbox",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-1",
+            "role": "link",
+            "name": "More information about your privacy, opens in a new tab",
+            "label": "You rely on Al Jazeera for truth and transparency",
+            "bounds": {
+              "x": 368,
+              "y": 502,
+              "width": 211,
+              "height": 15
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "href": "https://privacy.aljazeera.net/cookie/"
+          },
+          {
+            "id": "guardian-element-2",
+            "role": "button",
+            "name": "Cookie preferences, Opens the preference center dialog",
+            "label": "",
+            "bounds": {
+              "x": 1020,
+              "y": 499,
+              "width": 200,
+              "height": 32
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-3",
+            "role": "button",
+            "name": "Allow all",
+            "label": "",
+            "bounds": {
+              "x": 1020,
+              "y": 457,
+              "width": 200,
+              "height": 32
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-8",
+            "role": "button",
+            "name": "Close preference center",
+            "label": "",
+            "bounds": {
+              "x": 870,
+              "y": 37,
+              "width": 44,
+              "height": 44
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-9",
+            "role": "link",
+            "name": "More information about your privacy, opens in a new tab",
+            "label": "",
+            "bounds": {
+              "x": 361,
+              "y": 465,
+              "width": 153,
+              "height": 18
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/",
+            "href": "https://privacy.aljazeera.net/cookie/"
+          },
+          {
+            "id": "guardian-element-10",
+            "role": "button",
+            "name": "Strictly Necessary Cookies Always Active Strictly Necessary Cookies Always Active",
+            "label": "Strictly Necessary Cookies Always Active Strictly Necessary Cookies Always Active",
+            "bounds": {
+              "x": 361,
+              "y": 577,
+              "width": 526,
+              "height": 47
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-11",
+            "role": "button",
+            "name": "Performance Cookies - First Party Always Active Performance Cookies - First Party Always Active",
+            "label": "Performance Cookies - First Party Always Active Performance Cookies - First Party Always Active",
+            "bounds": {
+              "x": 361,
+              "y": 625,
+              "width": 526,
+              "height": 47
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-12",
+            "role": "button",
+            "name": "Performance Cookies - Third Parties Performance Cookies - Third Parties",
+            "label": "Performance Cookies - Third Parties Performance Cookies - Third Parties",
+            "bounds": {
+              "x": 361,
+              "y": 673,
+              "width": 526,
+              "height": 51
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-13",
+            "role": "button",
+            "name": "Functional Cookies Functional Cookies",
+            "label": "Functional Cookies Functional Cookies",
+            "bounds": {
+              "x": 361,
+              "y": 725,
+              "width": 526,
+              "height": 51
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-14",
+            "role": "button",
+            "name": "Targeting Cookies Targeting Cookies",
+            "label": "Targeting Cookies Targeting Cookies",
+            "bounds": {
+              "x": 361,
+              "y": 777,
+              "width": 526,
+              "height": 51
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-15",
+            "role": "button",
+            "name": "Social Media Cookies Social Media Cookies",
+            "label": "Social Media Cookies Social Media Cookies",
+            "bounds": {
+              "x": 361,
+              "y": 829,
+              "width": 526,
+              "height": 51
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          },
+          {
+            "id": "guardian-element-16",
+            "role": "button",
+            "name": "Confirm My Choices",
+            "label": "",
+            "bounds": {
+              "x": 361,
+              "y": 399,
+              "width": 539,
+              "height": 44
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-1",
+            "frameIndex": 0,
+            "frameUrl": "https://www.aljazeera.com/"
+          }
+        ],
+        "sanitizedText": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all Privacy Preference Center To provide you with the best Al Jazeera digital experience possible, we use information about your past and present engagement with our site and services. It includes things like how often you visit our site and what type of content you usually like to view. We use this information to present you with more relevant content, make business and programming decisions, and deliver personalized advertisements for things that you might like. The categories of information we collect are explained below. We recommend that you allow us to use all this information to get the most out of our digital content. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies, as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please see our Cookie Policy. View Our Cookie Policy Manage Consent Preferences Strictly Necessary Cookies Always Active Performance Cookies - First Party Always Active Performance Cookies - Third Parties Functional Cookies Targeting Cookies Social Media Cookies Confirm My Choices | Privacy Preference Center To provide you with the best Al Jazeera digital experience possible, we use information about your past and present engagement with our site and services. It includes things like how often you visit our site and what type of content you usually like to view. We use this information to present you with more relevant content, make business and programming decisions, and deliver personalized advertisements for things that you might like. The categories of information we collect are explained below. We recommend that you allow us to use all this information to get the most out of our digital content. Click on the different category headings to find out more and change our default settings according to your preference. You cannot opt-out of our First Party Strictly Necessary Cookies, as they are deployed in order to ensure the proper functioning of our website (such as prompting the cookie banner and remembering your settings, to log into your account, to redirect you when you log out, etc.). For more information about the First and Third Party Cookies used please see our Cookie Policy. View Our Cookie Policy Manage Consent Preferences Strictly Necessary Cookies Always Active Performance Cookies - First Party Always Active Performance Cookies - Third Parties Functional Cookies Targeting Cookies Social Media Cookies"
+      },
+      "screenshotBefore": "raw/screenshots/02-before.png",
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T18:43:06.872Z",
+        "frameCount": 73,
+        "screenshotHash": "3e605ef9caadbf4bc075f798f66e2cf8a2dde13bfe46e4be49718014bde11618",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": true,
+        "imageAttachedToOpenAIRequest": false,
+        "modelInputConsentFingerprint": "9ce5c7a0eee1ec184e95a60fd51f76bf596fc6b7f9cb9bb1d51f7cc7707a4272",
+        "modelStartedAt": "2026-09-13T18:43:10.026Z",
+        "modelCompletedAt": "2026-09-13T18:43:10.046Z",
+        "postDecisionPerceptionAt": "2026-09-13T18:43:13.885Z",
+        "postDecisionConsentFingerprint": "9ce5c7a0eee1ec184e95a60fd51f76bf596fc6b7f9cb9bb1d51f7cc7707a4272",
+        "postDecisionScreenshotHash": "93b6af9f49b7c95241ecf3bbc7887ed4c7607871d6c9b7b6b7d67b2cbb902e68",
+        "postDecisionScreenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        }
+      },
+      "screenshotAfter": "raw/screenshots/02-after.png",
+      "decision": {
+        "bannerDetected": true,
+        "darkPatterns": [
+          "ASYMMETRIC_EMPHASIS",
+          "HIDDEN_REJECTION",
+          "MULTI_LAYERED_CONSENT",
+          "PRESELECTED_TRACKING"
+        ],
+        "summary": "Disable 4 preselected non-essential consent control(s) and confirm the choices.",
+        "confidence": 0.98,
+        "action": {
+          "type": "SET_CONSENT_TOGGLES",
+          "targets": [
+            {
+              "elementId": "guardian-element-4",
+              "desiredState": false
+            },
+            {
+              "elementId": "guardian-element-5",
+              "desiredState": false
+            },
+            {
+              "elementId": "guardian-element-6",
+              "desiredState": false
+            },
+            {
+              "elementId": "guardian-element-7",
+              "desiredState": false
+            }
+          ],
+          "saveElementId": "guardian-element-16"
+        }
+      },
+      "safetyValidation": {
+        "allowed": true,
+        "reason": "batch contains only registered non-essential consent toggles"
+      },
+      "action": {
+        "step": 2,
+        "action": "SET_CONSENT_TOGGLES",
+        "targets": [
+          {
+            "elementId": "guardian-element-4",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-5",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-6",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-7",
+            "desiredState": false
+          }
+        ],
+        "saveElementId": "guardian-element-16",
+        "confirmedToggleIds": [
+          "guardian-element-4",
+          "guardian-element-5",
+          "guardian-element-6",
+          "guardian-element-7"
+        ],
+        "success": true,
+        "detail": "Confirmed 4 non-essential toggle(s) off and saved the choices."
+      },
+      "verification": {
+        "level": "LIKELY_VERIFIED",
+        "evidence": {
+          "explicitRejectActionSucceeded": false,
+          "bannerGone": true,
+          "successMessage": false,
+          "togglesRejected": true,
+          "saveActionSucceeded": true,
+          "persistedAfterRefresh": false,
+          "storageIndicatesRejection": false,
+          "details": [
+            "Consent interface disappeared.",
+            "Visible non-essential toggles are disabled.",
+            "Privacy choices were saved after toggle confirmation."
+          ]
+        }
+      },
+      "continuation": "Continued with re-perception to detect another consent layer or confirm completion."
+    },
+    {
+      "step": 3,
+      "perception": {
+        "url": "https://www.aljazeera.com/",
+        "title": "Breaking News, World News and Video from Al Jazeera",
+        "capturedAt": "2026-09-13T18:46:09.922Z",
+        "bannerDetected": false,
+        "frames": [
+          {
+            "index": 0,
+            "url": "https://www.aljazeera.com/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 1,
+            "url": "nullblank",
+            "name": "__pb_locator__",
+            "accessible": true
+          },
+          {
+            "index": 2,
+            "url": "https://cm.g.doubleclick.net/partnerpixels",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 3,
+            "url": "https://static.fsrv.io/load-cookie.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 4,
+            "url": "https://ads.pubmatic.com/AdServer/js/topics/topics_frame.html",
+            "name": "ifrm_pubmatic",
+            "accessible": true
+          },
+          {
+            "index": 5,
+            "url": "https://pa.openx.net/topics_frame.html",
+            "name": "ifrm_openx",
+            "accessible": true
+          },
+          {
+            "index": 6,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 7,
+            "url": "https://s.amazon-adsystem.com/iu3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 8,
+            "url": "https://ce.lijit.com/beacon/prebid-server/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 9,
+            "url": "https://s.amazon-adsystem.com/v3/pr",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 10,
+            "url": "https://www.recaptcha.net/recaptcha/enterprise/anchor",
+            "name": "a-f1qg5g2xbqhu",
+            "accessible": true
+          },
+          {
+            "index": 11,
+            "url": "https://rtb.gumgum.com/usync/amzns2s",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 12,
+            "url": "https://ssum-sec.casalemedia.com/usermatch",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 13,
+            "url": "https://ms-cookie-sync.presage.io/user-sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 14,
+            "url": "https://u.openx.net/w/1.0/cm",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 15,
+            "url": "https://sync.inmobi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 16,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 17,
+            "url": "https://match.sharethrough.com/jwumXNuB/v1/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 18,
+            "url": "https://s.seedtag.com/cs/cookiesync/amazon",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 19,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 20,
+            "url": "https://s.amazon-adsystem.com/ecm3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 21,
+            "url": "https://s.amazon-adsystem.com/ecm3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 22,
+            "url": "https://s.amazon-adsystem.com/ecm3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 23,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 24,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 25,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 26,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 27,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 28,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 29,
+            "url": "https://onetag-sys.com/usync/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 30,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 31,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 32,
+            "url": "https://cm.g.doubleclick.net/pixel",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 33,
+            "url": "https://rtb.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 34,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 35,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 36,
+            "url": "https://ssbsync.smartadserver.com/api/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 37,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 38,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 39,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 40,
+            "url": "https://s.ad.smaato.net/i/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 41,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 42,
+            "url": "https://ssum-sec.casalemedia.com/usermatch",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 43,
+            "url": "https://c1.adform.net/serving/cookie/match",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 44,
+            "url": "https://um.simpli.fi/pubmatic",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 45,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 46,
+            "url": "https://sync.aniview.com/cookiesyncendpoint",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 47,
+            "url": "https://s.amazon-adsystem.com/ecm3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 48,
+            "url": "https://cs-server-s2s.yellowblue.io/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 49,
+            "url": "https://ssp-sync.criteo.com/user-sync/iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 50,
+            "url": "https://apps.smartadserver.com/diff/templates/asset/csync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 51,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 52,
+            "url": "https://hbx.media.net/checksync.php",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 53,
+            "url": "https://gum.criteo.com/syncframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 54,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 55,
+            "url": "https://js-sec.indexww.com/um/ixmatch.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 56,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 57,
+            "url": "https://acdn.adnxs.com/dmp/async_usersync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 58,
+            "url": "https://gum.criteo.com/syncframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 59,
+            "url": "https://eb2.3lift.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 60,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 61,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 62,
+            "url": "https://js-sec.indexww.com/um/ixmatch.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 63,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 64,
+            "url": "https://ssum-sec.casalemedia.com/usermatch",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 65,
+            "url": "nullblank",
+            "name": "google_ads_top_frame",
+            "accessible": true
+          },
+          {
+            "index": 66,
+            "url": "https://ssum-sec.casalemedia.com/usermatch",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 67,
+            "url": "nullblank",
+            "name": "google_ads_iframe_/15184186,5287/aljazeera_right_rail_0",
+            "accessible": true
+          },
+          {
+            "index": 68,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 69,
+            "url": "https://www.google.com/recaptcha/api2/aframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 70,
+            "url": "https://ssum-sec.casalemedia.com/usermatch",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 71,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 72,
+            "url": "https://hbx.media.net/cksync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 73,
+            "url": "https://cs.media.net/cksync.php",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 74,
+            "url": "https://rtb-csync.smartadserver.com/redir/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 75,
+            "url": "https://eu-u.openx.net/w/1.0/cm",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 76,
+            "url": "https://rtb-csync.smartadserver.com/redir/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 77,
+            "url": "https://ssum-sec.casalemedia.com/usermatch",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 78,
+            "url": "https://www.temu.com/api/adx/cm/pixel-pubmatic",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 79,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 80,
+            "url": "https://image4.pubmatic.com/AdServer/SPug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 81,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 82,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 83,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 84,
+            "url": "https://x.bidswitch.net/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 85,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 86,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 87,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 88,
+            "url": "https://s2s.t13.io/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 89,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 90,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 91,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 92,
+            "url": "https://ipac.ctnsnet.com/int/cm",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 93,
+            "url": "https://simage2.pubmatic.com/AdServer/Pug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 94,
+            "url": "https://simage2.pubmatic.com/AdServer/Pug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 95,
+            "url": "https://s.amazon-adsystem.com/ecm3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 96,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 97,
+            "url": "https://simage2.pubmatic.com/AdServer/Pug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 98,
+            "url": "https://image2.pubmatic.com/AdServer/Pug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 99,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 100,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 101,
+            "url": "https://image2.pubmatic.com/AdServer/Pug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 102,
+            "url": "https://image2.pubmatic.com/AdServer/Pug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 103,
+            "url": "https://image2.pubmatic.com/AdServer/Pug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 104,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 105,
+            "url": "https://cm.adgrx.com/bridge",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 106,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 107,
+            "url": "https://hbx.media.net/checksync.php",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 108,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 109,
+            "url": "https://core.iprom.net/cookiesync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 110,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 111,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 112,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 113,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 114,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 115,
+            "url": "https://sync-dsp.ad-m.asia/dsp/api/sync/send",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 116,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 117,
+            "url": "https://pbs.fsrv.io//setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 118,
+            "url": "https://ce.lijit.com/merge",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 119,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 120,
+            "url": "https://core.iprom.net/cookiesync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 121,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 122,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 123,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 124,
+            "url": "https://image2.pubmatic.com/AdServer/Pug",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 125,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 126,
+            "url": "https://sync-dsp.ad-m.asia/dsp/api/sync/send",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 127,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 128,
+            "url": "https://sync.targeting.unrulymedia.com/csync/RX-533eb4d8-f97d-4be3-a9de-59155518e020-004",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 129,
+            "url": "https://hbx.media.net/checksync.php",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 130,
+            "url": "https://ms-cookie-sync.presage.io/user-sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 131,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 132,
+            "url": "https://s2s.t13.io/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 133,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 134,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 135,
+            "url": "https://ce.lijit.com/merge",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 136,
+            "url": "https://ms-cookie-sync.presage.io/user-sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 137,
+            "url": "https://s.amazon-adsystem.com/ecm3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 138,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 139,
+            "url": "https://sync.adkernel.com/user-sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 140,
+            "url": "https://cs.media.net/cksync.php",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 141,
+            "url": "https://s2s.t13.io/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 142,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 143,
+            "url": "https://dsp-service.admatic.de/cookie_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 144,
+            "url": "https://cs.media.net/cksync.php",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 145,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 146,
+            "url": "https://sync.kueezrtb.com/api/user/html/62ce79e7dd15099534ae5e04",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 147,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 148,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 149,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 150,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 151,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 152,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 153,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 154,
+            "url": "https://ssp-sync.criteo.com/user-sync/iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 155,
+            "url": "https://ms-cookie-sync.presage.io/user-sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 156,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 157,
+            "url": "https://usync.4dex.io/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 158,
+            "url": "https://pbs-cs.yellowblue.io/pbs-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 159,
+            "url": "https://sync.sparteo.com/s2s_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 160,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 161,
+            "url": "https://static.cdn.admatic.de/cookie.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 162,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 163,
+            "url": "https://s.amazon-adsystem.com/ecm3",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 164,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 165,
+            "url": "https://usersync.gumgum.com/usersync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 166,
+            "url": "https://onetag-sys.com/usync/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 167,
+            "url": "https://s.console.adtarget.com.tr/sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 168,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "3cf78e983ea2b28",
+            "accessible": true
+          },
+          {
+            "index": 169,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 170,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 171,
+            "url": "https://dsp-service.pixad.com.tr/cookie_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 172,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 173,
+            "url": "https://sync.cootlogix.com/api/user/html/55537adc33d1b40300987e8e",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 174,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 175,
+            "url": "https://ce.lijit.com/merge",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 176,
+            "url": "https://ap.lijit.com/beacon/prebid-server/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 177,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 178,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 179,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 180,
+            "url": "https://prebid.pixad.com.tr/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 181,
+            "url": "https://prebid.pixad.com.tr/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 182,
+            "url": "https://ssp-sync.criteo.com/user-sync/iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 183,
+            "url": "https://b1sync.outbrain.com/usersync/prebid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 184,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 185,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 186,
+            "url": "https://prebid.pixad.com.tr/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 187,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 188,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 189,
+            "url": "https://prebid.pixad.com.tr/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 190,
+            "url": "https://ms-cookie-sync.presage.io/user-sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 191,
+            "url": "https://prebid.pixad.com.tr/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 192,
+            "url": "https://ms-cookie-sync.presage.io/user-sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 193,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 194,
+            "url": "https://sync.adkernel.com/user-sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 195,
+            "url": "https://sync.console.adtarget.com.tr/csync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 196,
+            "url": "https://sync.console.adtarget.com.tr/csync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 197,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 198,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 199,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 200,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 201,
+            "url": "https://u.openx.net/w/1.0/cm",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 202,
+            "url": "https://us-u.openx.net/w/1.0/cm",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 203,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 204,
+            "url": "https://prebid.pixad.com.tr/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 205,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 206,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 207,
+            "url": "https://dsp-service.admatic.de/cookie_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 208,
+            "url": "https://dsp-service.monetixads.com/cookie_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 209,
+            "url": "https://sync.kueezrtb.com/api/user/html/62ce79e7dd15099534ae5e04",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 210,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 211,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 212,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 213,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 214,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 215,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 216,
+            "url": "https://ssp-sync.criteo.com/user-sync/iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 217,
+            "url": "https://ms-cookie-sync.presage.io/user-sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 218,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 219,
+            "url": "https://usync.4dex.io/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 220,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 221,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 222,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 223,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 224,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 225,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 226,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 227,
+            "url": "https://static.cdn.monetixads.com/cookie.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 228,
+            "url": "https://usync.4dex.io/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 229,
+            "url": "https://ssp-sync.criteo.com/user-sync/iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 230,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 231,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 232,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 233,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 234,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 235,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 236,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 237,
+            "url": "https://ms-cookie-sync.presage.io/user-sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 238,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 239,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 240,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 241,
+            "url": "https://sync.cootlogix.com/api/user/html/55537adc33d1b40300987e8e",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 242,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 243,
+            "url": "https://sync.kueezrtb.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 244,
+            "url": "https://onetag-sys.com/usync/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 245,
+            "url": "https://onetag-sys.com/usync/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 246,
+            "url": "https://hde.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 247,
+            "url": "https://sync.cootlogix.com/api/user/html/55537adc33d1b40300987e8e",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 248,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 249,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 250,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 251,
+            "url": "https://hde.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 252,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 253,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 254,
+            "url": "https://onetag-sys.com/usync/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 255,
+            "url": "https://cookies.nextmillmedia.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 256,
+            "url": "https://cdn.undertone.com/js/usersync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 257,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 258,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 259,
+            "url": "https://syncingbridge.com/userIframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 260,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 261,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 262,
+            "url": "https://hde.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 263,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 264,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 265,
+            "url": "https://onetag-sys.com/usync/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 266,
+            "url": "https://cookies.nextmillmedia.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 267,
+            "url": "https://cdn.undertone.com/js/usersync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 268,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 269,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 270,
+            "url": "https://syncingbridge.com/userIframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 271,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 272,
+            "url": "https://onetag-sys.com/usync/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 273,
+            "url": "https://eb2.3lift.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 274,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 275,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "Rubicon",
+            "accessible": true
+          },
+          {
+            "index": 276,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "Rubicon",
+            "accessible": true
+          },
+          {
+            "index": 277,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 278,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 279,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 280,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 281,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 282,
+            "url": "https://ssum-sec.casalemedia.com/usermatch",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 283,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 284,
+            "url": "https://sync.cootlogix.com/api/user/html/pbs_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 285,
+            "url": "https://pbs-cs.yellowblue.io/pbs-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 286,
+            "url": "https://de.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 287,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 288,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 289,
+            "url": "https://usync.ingage.tech/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 290,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 291,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 292,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 293,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 294,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 295,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 296,
+            "url": "https://s.seedtag.com/cs/cookiesync/prebid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 297,
+            "url": "https://sync.adkernel.com/user-sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 298,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 299,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 300,
+            "url": "https://sync.cootlogix.com/api/user/html/pbs_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 301,
+            "url": "https://pbs-cs.yellowblue.io/pbs-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 302,
+            "url": "https://de.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 303,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 304,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 305,
+            "url": "https://ad.360yield.com/user_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 306,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 307,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 308,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 309,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 310,
+            "url": "https://usync.ingage.tech/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 311,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 312,
+            "url": "https://s.seedtag.com/cs/cookiesync/prebid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 313,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 314,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 315,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 316,
+            "url": "https://cs.admanmedia.com/292deb7c3c2bf25073c04bb900f3a44a.gif",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 317,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 318,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 319,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 320,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 321,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 322,
+            "url": "https://ad.360yield.com/user_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 323,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 324,
+            "url": "https://ortb.vdo.ai/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 325,
+            "url": "https://ortb.vdo.ai/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 326,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 327,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 328,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 329,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 330,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 331,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 332,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 333,
+            "url": "https://cs.admanmedia.com/292deb7c3c2bf25073c04bb900f3a44a.gif",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 334,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 335,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 336,
+            "url": "https://ortb.vdo.ai/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 337,
+            "url": "https://ortb.vdo.ai/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 338,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 339,
+            "url": "https://cs.seedtag.com/cs.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 340,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 341,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 342,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 343,
+            "url": "https://dsp-service.admatic.de/cookie_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 344,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 345,
+            "url": "https://cs-server-s2s.yellowblue.io/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 346,
+            "url": "https://cs.seedtag.com/cs.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 347,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "inst-rubicon",
+            "accessible": true
+          },
+          {
+            "index": 348,
+            "url": "https://de.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 349,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 350,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 351,
+            "url": "https://cdn.undertone.com/js/usersync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 352,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 353,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 354,
+            "url": "https://us-east-1-cs-rtb.openwebmp.com/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 355,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 356,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 357,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 358,
+            "url": "https://sync.kueezrtb.com/api/user/html/62ce79e7dd15099534ae5e04",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 359,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 360,
+            "url": "https://de.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 361,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 362,
+            "url": "https://cdn.undertone.com/js/usersync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 363,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 364,
+            "url": "https://us-east-1-cs-rtb.openwebmp.com/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 365,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 366,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 367,
+            "url": "https://sync.kueezrtb.com/api/user/html/62ce79e7dd15099534ae5e04",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 368,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 369,
+            "url": "https://cs.ingage.tech/v1/sync/equative/3ce41e7e-c199-4dbc-8d77-e1350b3a2813",
+            "name": "inst-equative",
+            "accessible": true
+          },
+          {
+            "index": 370,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 371,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 372,
+            "url": "https://ssp-sync.criteo.com/user-sync/redirect",
+            "name": "inst-criteo",
+            "accessible": true
+          },
+          {
+            "index": 373,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "Rubicon",
+            "accessible": true
+          },
+          {
+            "index": 374,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "Rubicon",
+            "accessible": true
+          },
+          {
+            "index": 375,
+            "url": "https://sync.kueezrtb.com/api/user/html/62ce79e7dd15099534ae5e04",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 376,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 377,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 378,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 379,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 380,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 381,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 382,
+            "url": "https://ssp-sync.criteo.com/user-sync/iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 383,
+            "url": "https://usync.4dex.io/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 384,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 385,
+            "url": "https://sync.cootlogix.com/api/user/html/55537adc33d1b40300987e8e",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 386,
+            "url": "https://de.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 387,
+            "url": "https://sync.kueezrtb.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 388,
+            "url": "https://ssp-sync.criteo.com/user-sync/redirect",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 389,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 390,
+            "url": "https://sync.cootlogix.com/api/user/html/55537adc33d1b40300987e8e",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 391,
+            "url": "https://de.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 392,
+            "url": "https://sync.kueezrtb.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 393,
+            "url": "https://ssp-sync.criteo.com/user-sync/redirect",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 394,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 395,
+            "url": "https://sync.cootlogix.com/api/user/html/55537adc33d1b40300987e8e",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 396,
+            "url": "https://sync.kueezrtb.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 397,
+            "url": "https://ssp-sync.criteo.com/user-sync/redirect",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 398,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 399,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 400,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 401,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 402,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 403,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 404,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 405,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 406,
+            "url": "https://sync.cootlogix.com/api/cookie",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 407,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 408,
+            "url": "https://dsp-service.adtarget.biz/cookie_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 409,
+            "url": "https://prebid.adtarget.biz/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 410,
+            "url": "https://prebid.a-mo.net/isyn",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 411,
+            "url": "https://prebid.adtarget.biz/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 412,
+            "url": "https://prebid.adtarget.biz/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 413,
+            "url": "https://prebid.adtarget.biz/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 414,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 415,
+            "url": "https://ads.pubmatic.com/AdServer/js/user_sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 416,
+            "url": "https://pbs.fsrv.io//setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 417,
+            "url": "https://pbs.fsrv.io//setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 418,
+            "url": "https://ap.lijit.com/beacon/prebid-server/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 419,
+            "url": "https://sync.adkernel.com/user-sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 420,
+            "url": "https://dsp-service.admatic.de/cookie_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 421,
+            "url": "https://cookies.nextmillmedia.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 422,
+            "url": "https://dsp-service.monetixads.com/cookie_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 423,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 424,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 425,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 426,
+            "url": "https://usync.4dex.io/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 427,
+            "url": "https://ssp-sync.criteo.com/user-sync/iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 428,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 429,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 430,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 431,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 432,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 433,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 434,
+            "url": "https://ms-cookie-sync.presage.io/user-sync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 435,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 436,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 437,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 438,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 439,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 440,
+            "url": "https://sync.cootlogix.com/api/user/html/pbs_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 441,
+            "url": "https://pbs-cs.yellowblue.io/pbs-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 442,
+            "url": "https://de.tynt.com/deb/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 443,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 444,
+            "url": "https://sync.aniview.com/cookiesyncendpoint",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 445,
+            "url": "https://usync.ingage.tech/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 446,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 447,
+            "url": "https://s.seedtag.com/cs/cookiesync/prebid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 448,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 449,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 450,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 451,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 452,
+            "url": "https://ad.360yield.com/user_sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 453,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 454,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 455,
+            "url": "https://eus.rubiconproject.com/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 456,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 457,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 458,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 459,
+            "url": "https://cs.admanmedia.com/292deb7c3c2bf25073c04bb900f3a44a.gif",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 460,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 461,
+            "url": "null/",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 462,
+            "url": "https://ortb.vdo.ai/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 463,
+            "url": "https://ortb.vdo.ai/sync-iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 464,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 465,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 466,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 467,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 468,
+            "url": "https://prebid.admatic.de/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 469,
+            "url": "https://ssp-sync.criteo.com/user-sync/iframe",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 470,
+            "url": "https://usync.4dex.io/usync.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 471,
+            "url": "https://ittpx.eskimi.com/sync",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 472,
+            "url": "https://cs.seedtag.com/cs.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 473,
+            "url": "https://prebid.monetixads.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 474,
+            "url": "https://cookies.nextmillmedia.com/setuid",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 475,
+            "url": "nullblank",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 476,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 477,
+            "url": "",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 478,
+            "url": "nullblank",
+            "name": "google_ads_iframe_/15184186,5287/aljazeera_leaderboard_atf_2_0",
+            "accessible": true
+          },
+          {
+            "index": 479,
+            "url": "https://googleads.g.doubleclick.net/xbbe/pixel",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 480,
+            "url": "https://ep2.adtrafficquality.google/sodar/Klz6NWr5.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 481,
+            "url": "https://s0.2mdn.net/sadbundle/6003928130317817742/index.html",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 482,
+            "url": "nullblank",
+            "name": "",
+            "accessible": false
+          }
+        ],
+        "containers": [],
+        "elements": [],
+        "sanitizedText": ""
+      },
+      "screenshotBefore": "raw/screenshots/03-before.png",
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T18:46:09.922Z",
+        "frameCount": 482,
+        "screenshotHash": "306c7957eede1073759f60c7028bb178c12662a51fc97804465ad9fc71a6af8f",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": true,
+        "imageAttachedToOpenAIRequest": false,
+        "modelInputConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+        "modelStartedAt": "2026-09-13T18:46:13.119Z",
+        "modelCompletedAt": "2026-09-13T18:46:13.149Z",
+        "postDecisionPerceptionAt": "2026-09-13T18:46:17.323Z",
+        "postDecisionConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+        "postDecisionScreenshotHash": "08373af99158982135a17d0b5d622f203a169c99e6335972b3c599e3e689056b",
+        "postDecisionScreenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        }
+      },
+      "screenshotAfter": "raw/screenshots/03-after.png",
+      "decision": {
+        "bannerDetected": false,
+        "darkPatterns": [
+          "NONE"
+        ],
+        "summary": "No visible cookie-consent interface remains.",
+        "confidence": 0.99,
+        "action": {
+          "type": "NO_BANNER"
+        }
+      },
+      "safetyValidation": {
+        "allowed": true,
+        "reason": "non-interactive terminal action"
+      },
+      "continuation": "Stopped because no further consent action was required."
+    },
+    {
+      "step": 4,
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T18:46:24.137Z",
+        "postDecisionPerceptionAt": "2026-09-13T18:46:24.137Z",
+        "frameCount": 1,
+        "screenshotHash": "388550eeb1c75231904346f8dc772b2aa9022cbf95d10820c0ecb9ccea8e61ef",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": false,
+        "imageAttachedToOpenAIRequest": false,
+        "postDecisionConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431"
+      },
+      "verification": {
+        "level": "LIKELY_VERIFIED",
+        "evidence": {
+          "explicitRejectActionSucceeded": false,
+          "bannerGone": true,
+          "successMessage": false,
+          "togglesRejected": true,
+          "saveActionSucceeded": true,
+          "persistedAfterRefresh": false,
+          "storageIndicatesRejection": false,
+          "details": [
+            "Consent interface disappeared.",
+            "Visible non-essential toggles are disabled.",
+            "Privacy choices were saved after toggle confirmation."
+          ]
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "initialState": {
+    "url": "https://www.aljazeera.com/",
+    "title": "Breaking News, World News and Video from Al Jazeera",
+    "capturedAt": "2026-09-13T18:43:03.240Z",
+    "bannerDetected": true,
+    "frames": [
+      {
+        "index": 0,
+        "url": "https://www.aljazeera.com/",
+        "name": "",
+        "accessible": true
+      }
+    ],
+    "containers": [
+      {
+        "id": "guardian-container-1",
+        "role": "region",
+        "text": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all",
+        "bounds": {
+          "x": 0,
+          "y": 4246,
+          "width": 1246,
+          "height": 0
+        },
+        "frameIndex": 0,
+        "frameUrl": "https://www.aljazeera.com/",
+        "scrollTop": 0,
+        "scrollHeight": 0,
+        "clientHeight": 0,
+        "scrollable": false
+      }
+    ],
+    "elements": [
+      {
+        "id": "guardian-element-1",
+        "role": "link",
+        "name": "More information about your privacy, opens in a new tab",
+        "label": "You rely on Al Jazeera for truth and transparency",
+        "bounds": {
+          "x": 360,
+          "y": 502,
+          "width": 211,
+          "height": 15
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "link",
+        "containerId": "guardian-container-1",
+        "frameIndex": 0,
+        "frameUrl": "https://www.aljazeera.com/",
+        "href": "https://privacy.aljazeera.net/cookie/"
+      },
+      {
+        "id": "guardian-element-2",
+        "role": "button",
+        "name": "Cookie preferences, Opens the preference center dialog",
+        "label": "",
+        "bounds": {
+          "x": 1013,
+          "y": 499,
+          "width": 200,
+          "height": 32
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-1",
+        "frameIndex": 0,
+        "frameUrl": "https://www.aljazeera.com/"
+      },
+      {
+        "id": "guardian-element-3",
+        "role": "button",
+        "name": "Allow all",
+        "label": "",
+        "bounds": {
+          "x": 1013,
+          "y": 457,
+          "width": 200,
+          "height": 32
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-1",
+        "frameIndex": 0,
+        "frameUrl": "https://www.aljazeera.com/"
+      }
+    ],
+    "sanitizedText": "You rely on Al Jazeera for truth and transparency We use cookies and other tracking technologies to deliver and personalize content and ads, enable features, measure site performance, and enable social media sharing. You can choose to customize your preferences.Learn more about our Cookie Policy. Cookie preferences Allow all"
+  },
+  "initialScreenshot": "raw/screenshots/00-initial.png",
+  "finalScreenshot": "raw/screenshots/04-final.png",
+  "finalState": {
+    "url": "https://www.aljazeera.com/",
+    "title": "Breaking News, World News and Video from Al Jazeera",
+    "capturedAt": "2026-09-13T18:46:24.137Z",
+    "bannerDetected": false,
+    "frames": [
+      {
+        "index": 0,
+        "url": "https://www.aljazeera.com/",
+        "name": "",
+        "accessible": true
+      }
+    ],
+    "containers": [],
+    "elements": [],
+    "sanitizedText": ""
+  },
+  "report": {
+    "startedAt": "2026-09-13T18:42:59.906Z",
+    "completedAt": "2026-09-13T18:46:24.316Z",
+    "url": "https://www.aljazeera.com/",
+    "provider": "mock",
+    "mode": "inspector",
+    "displayProfile": "custom",
+    "viewport": {
+      "width": 1260,
+      "height": 540
+    },
+    "bannerDetected": true,
+    "finalBannerDetected": false,
+    "finalStateCapturedAt": "2026-09-13T18:46:24.137Z",
+    "finalConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+    "darkPatterns": [
+      "ASYMMETRIC_EMPHASIS",
+      "HIDDEN_REJECTION",
+      "MULTI_LAYERED_CONSENT",
+      "PRESELECTED_TRACKING"
+    ],
+    "actions": [
+      {
+        "step": 1,
+        "action": "OPEN_PREFERENCES",
+        "elementId": "guardian-element-2",
+        "success": true,
+        "detail": "action is narrowly scoped to consent rejection"
+      },
+      {
+        "step": 2,
+        "action": "SET_CONSENT_TOGGLES",
+        "targets": [
+          {
+            "elementId": "guardian-element-4",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-5",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-6",
+            "desiredState": false
+          },
+          {
+            "elementId": "guardian-element-7",
+            "desiredState": false
+          }
+        ],
+        "saveElementId": "guardian-element-16",
+        "confirmedToggleIds": [
+          "guardian-element-4",
+          "guardian-element-5",
+          "guardian-element-6",
+          "guardian-element-7"
+        ],
+        "success": true,
+        "detail": "Confirmed 4 non-essential toggle(s) off and saved the choices."
+      }
+    ],
+    "safetyStops": [],
+    "verification": {
+      "level": "LIKELY_VERIFIED",
+      "evidence": {
+        "explicitRejectActionSucceeded": false,
+        "bannerGone": true,
+        "successMessage": false,
+        "togglesRejected": true,
+        "saveActionSucceeded": true,
+        "persistedAfterRefresh": false,
+        "storageIndicatesRejection": false,
+        "details": [
+          "Consent interface disappeared.",
+          "Visible non-essential toggles are disabled.",
+          "Privacy choices were saved after toggle confirmation."
+        ]
+      }
+    },
+    "artifactDirectory": "C:\\Users\\Greeshma\\OneDrive\\Desktop\\dark-pattern-guardian\\artifacts\\run-2026-09-13T18-42-59-907Z"
+  }
+}

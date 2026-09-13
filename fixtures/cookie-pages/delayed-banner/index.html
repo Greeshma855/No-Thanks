@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Delayed consent fixture</title>
+  </head>
+  <body>
+    <main><h1>Delayed consent page</h1></main>
+    <script>
+      const delay = Number(new URLSearchParams(location.search).get('delay') || '1000');
+      setTimeout(() => {
+        const banner = document.createElement('section');
+        banner.dataset.cookieBanner = 'true';
+        banner.setAttribute('role', 'dialog');
+        banner.setAttribute('aria-label', 'Cookie consent');
+        banner.innerHTML =
+          '<p>We use cookies for analytics and advertising.</p><button id="reject">Reject all</button><button>Accept all</button>';
+        banner.querySelector('#reject').addEventListener('click', () => {
+          document.body.dataset.consentState = 'rejected';
+          banner.remove();
+        });
+        document.body.append(banner);
+      }, delay);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Soft Focus</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font: 16px system-ui;
+        color: #422c35;
+        background: linear-gradient(135deg, #f9cad7, #c9e8ee);
+        display: grid;
+        place-items: center;
+      }
+      .hero {
+        text-align: center;
+      }
+      h1 {
+        font: italic 76px Georgia;
+      }
+      .cloud {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: min(680px, 90vw);
+        background: #fff9;
+        backdrop-filter: blur(24px);
+        padding: 38px;
+        border-radius: 50% 45% 48% 42%;
+        box-shadow: 0 25px 80px #8b536955;
+      }
+      .choices {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+      }
+      .choices button {
+        border: 0;
+        border-radius: 100px;
+        padding: 14px 28px;
+        background: #704b61;
+        color: white;
+      }
+      .choices .continue {
+        background: #eee;
+        color: #6d5663;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body data-consent-state="pending">
+    <div class="hero">
+      <h1>Soft Focus</h1>
+      <p>Slow ideas for busy days.</p>
+    </div>
+    <section class="cloud" data-cookie-banner role="dialog" aria-label="A better experience">
+      <h2>Let us make this feel personal</h2>
+      <p>
+        Our partners may use cookies under legitimate interest to improve your experience. Choose
+        how you would like to continue.
+      </p>
+      <div class="choices">
+        <button>Sounds Good</button><button class="continue">Continue</button>
+      </div>
+    </section>
+    <script>
+      document.querySelector('button')?.addEventListener('click', () => {
+        localStorage.setItem('guardianConsent', 'accepted');
+        document.body.dataset.consentState = 'accepted';
+        document.querySelector('.cloud').remove();
+      });
+      document.querySelector('.continue')?.addEventListener('click', () => {
+        localStorage.setItem('guardianConsent', 'unknown');
+        document.body.dataset.consentState = 'unknown';
+        document.querySelector('.cloud').remove();
+      });
+    </script>
+  </body>
+</html>

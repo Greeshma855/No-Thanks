@@ -1,0 +1,718 @@
+{
+  "schemaVersion": 1,
+  "runId": "run-2026-09-13T18-36-46-689Z",
+  "steps": [
+    {
+      "step": 0,
+      "telemetry": {
+        "discoveryInitialPerceptionAt": "2026-09-13T18:36:50.720Z",
+        "perceptionCapturedAt": "2026-09-13T18:36:50.720Z",
+        "consentCandidateDetectedAt": "2026-09-13T18:36:50.720Z",
+        "frameCount": 3,
+        "screenshotHash": "0c8ea9e4ee590e42f6e15c400ec72f5aba39abcf657d7486bc3a63b18ae48012",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": false
+      }
+    },
+    {
+      "step": 1,
+      "perception": {
+        "url": "https://www.theguardian.com/international",
+        "title": "Latest news, sport and opinion from the Guardian",
+        "capturedAt": "2026-09-13T18:36:50.720Z",
+        "bannerDetected": true,
+        "frames": [
+          {
+            "index": 0,
+            "url": "https://www.theguardian.com/international",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 1,
+            "url": "nullblank",
+            "name": "__tcfapiLocator",
+            "accessible": true
+          },
+          {
+            "index": 2,
+            "url": "https://sourcepoint.theguardian.com/index.html",
+            "name": "sp_message_iframe_1482255",
+            "accessible": true
+          }
+        ],
+        "containers": [
+          {
+            "id": "guardian-container-2001",
+            "role": "region",
+            "text": "It's your choice When we make the Guardian available to you online, we and our partners may use cookies and similar technologies to help us to do this. Some are necessary to help our website work properly and can't be switched off, and some are optional but support the Guardian and your experience in other ways. To do this we work with a cross section of 139 partners. Cookies and other similar technologies may be used to access personal data, including page visits and your IP address. We use this information about you, your devices and your online interactions with us to provide, analyse and improve our services. Depending on your choice, we may also use your data to personalise content or advertising. We use cookies and similar technologies for the following purposes: Store and/or access information on a device Personalised advertising, advertising measurement, audience research and services development Personalised content and content measurement Learn more in our privacy policy and cookie policy, and manage the choices available to you at any time by going to ‘Privacy settings’ at the bottom of any page. Are you happy to accept cookies? To manage your cookie choices now, including how to opt out where our partners rely on legitimate interests to use your information, click on Manage my cookies. Yes, I accept No, thank you Manage cookies",
+            "bounds": {
+              "x": 0,
+              "y": 265,
+              "width": 1246,
+              "height": 276
+            },
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+            "scrollTop": 0,
+            "scrollHeight": 276,
+            "clientHeight": 276,
+            "scrollable": false
+          },
+          {
+            "id": "guardian-container-2002",
+            "role": "scroll-region",
+            "text": "It's your choice When we make the Guardian available to you online, we and our partners may use cookies and similar technologies to help us to do this. Some are necessary to help our website work properly and can't be switched off, and some are optional but support the Guardian and your experience in other ways. To do this we work with a cross section of 139 partners. Cookies and other similar technologies may be used to access personal data, including page visits and your IP address. We use this information about you, your devices and your online interactions with us to provide, analyse and improve our services. Depending on your choice, we may also use your data to personalise content or advertising. We use cookies and similar technologies for the following purposes: Store and/or access information on a device Personalised advertising, advertising measurement, audience research and services development Personalised content and content measurement Learn more in our privacy policy and cookie policy, and manage the choices available to you at any time by going to ‘Privacy settings’ at the bottom of any page. Are you happy to accept cookies? To manage your cookie choices now, including how to opt out where our partners rely on legitimate interests to use your information, click on Manage my cookies.",
+            "bounds": {
+              "x": 53,
+              "y": 265,
+              "width": 1140,
+              "height": 276
+            },
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+            "scrollTop": 0,
+            "scrollHeight": 473,
+            "clientHeight": 275,
+            "scrollable": true
+          }
+        ],
+        "elements": [
+          {
+            "id": "guardian-element-2001",
+            "role": "link",
+            "name": "partners",
+            "label": "",
+            "bounds": {
+              "x": 235,
+              "y": 576,
+              "width": 56,
+              "height": 19
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-2002",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+            "href": "https://sourcepoint.theguardian.com/index.html"
+          },
+          {
+            "id": "guardian-element-2002",
+            "role": "button",
+            "name": "Store and/or access information on a device",
+            "label": "",
+            "bounds": {
+              "x": 713,
+              "y": 410,
+              "width": 209,
+              "height": 56
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2002",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+          },
+          {
+            "id": "guardian-element-2003",
+            "role": "button",
+            "name": "Personalised advertising, advertising measurement, audience research and services development",
+            "label": "",
+            "bounds": {
+              "x": 713,
+              "y": 479,
+              "width": 209,
+              "height": 96
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2002",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+          },
+          {
+            "id": "guardian-element-2004",
+            "role": "button",
+            "name": "Personalised content and content measurement",
+            "label": "",
+            "bounds": {
+              "x": 713,
+              "y": 588,
+              "width": 209,
+              "height": 56
+            },
+            "visible": false,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2002",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+          },
+          {
+            "id": "guardian-element-2005",
+            "role": "link",
+            "name": "privacy policy",
+            "label": "",
+            "bounds": {
+              "x": 1067,
+              "y": 336,
+              "width": 92,
+              "height": 19
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-2002",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+            "href": "https://www.theguardian.com/help/privacy-policy"
+          },
+          {
+            "id": "guardian-element-2006",
+            "role": "link",
+            "name": "<span href=\"true\" target=\"_blank\" aria-label=\"message-link\">cookie policy</span>",
+            "label": "",
+            "bounds": {
+              "x": 974,
+              "y": 356,
+              "width": 86,
+              "height": 19
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "link",
+            "containerId": "guardian-container-2002",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+            "href": "https://www.theguardian.com/info/cookies"
+          },
+          {
+            "id": "guardian-element-2007",
+            "role": "button",
+            "name": "Yes, I accept",
+            "label": "Yes, I accept",
+            "bounds": {
+              "x": 237,
+              "y": 481,
+              "width": 120,
+              "height": 41
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2001",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+          },
+          {
+            "id": "guardian-element-2008",
+            "role": "button",
+            "name": "No, thank you",
+            "label": "No, thank you",
+            "bounds": {
+              "x": 369,
+              "y": 481,
+              "width": 130,
+              "height": 41
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2001",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+          },
+          {
+            "id": "guardian-element-2009",
+            "role": "button",
+            "name": "Manage cookies",
+            "label": "Manage cookies",
+            "bounds": {
+              "x": 512,
+              "y": 481,
+              "width": 144,
+              "height": 41
+            },
+            "visible": true,
+            "disabled": false,
+            "kind": "button",
+            "containerId": "guardian-container-2001",
+            "frameIndex": 2,
+            "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+          }
+        ],
+        "sanitizedText": "It's your choice When we make the Guardian available to you online, we and our partners may use cookies and similar technologies to help us to do this. Some are necessary to help our website work properly and can't be switched off, and some are optional but support the Guardian and your experience in other ways. To do this we work with a cross section of 139 partners. Cookies and other similar technologies may be used to access personal data, including page visits and your IP address. We use this information about you, your devices and your online interactions with us to provide, analyse and improve our services. Depending on your choice, we may also use your data to personalise content or advertising. We use cookies and similar technologies for the following purposes: Store and/or access information on a device Personalised advertising, advertising measurement, audience research and services development Personalised content and content measurement Learn more in our privacy policy and cookie policy, and manage the choices available to you at any time by going to ‘Privacy settings’ at the bottom of any page. Are you happy to accept cookies? To manage your cookie choices now, including how to opt out where our partners rely on legitimate interests to use your information, click on Manage my cookies. Yes, I accept No, thank you Manage cookies | It's your choice When we make the Guardian available to you online, we and our partners may use cookies and similar technologies to help us to do this. Some are necessary to help our website work properly and can't be switched off, and some are optional but support the Guardian and your experience in other ways. To do this we work with a cross section of 139 partners. Cookies and other similar technologies may be used to access personal data, including page visits and your IP address. We use this information about you, your devices and your online interactions with us to provide, analyse and improve our services. Depending on your choice, we may also use your data to personalise content or advertising. We use cookies and similar technologies for the following purposes: Store and/or access information on a device Personalised advertising, advertising measurement, audience research and services development Personalised content and content measurement Learn more in our privacy policy and cookie policy, and manage the choices available to you at any time by going to ‘Privacy settings’ at the bottom of any page. Are you happy to accept cookies? To manage your cookie choices now, including how to opt out where our partners rely on legitimate interests to use your information, click on Manage my cookies."
+      },
+      "screenshotBefore": "raw/screenshots/01-before.png",
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T18:36:50.720Z",
+        "consentCandidateDetectedAt": "2026-09-13T18:36:50.720Z",
+        "frameCount": 3,
+        "screenshotHash": "41a9af68eb20b827bf14cceb1a00e6878b1eeeefb2c1ed70fa18fe0ecda97f37",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": true,
+        "imageAttachedToOpenAIRequest": false,
+        "modelInputConsentFingerprint": "1c52e6584a0113f77dbb836dab81f6f0e87b1191a52d18f815199f81b831d00c",
+        "modelStartedAt": "2026-09-13T18:36:51.634Z",
+        "modelCompletedAt": "2026-09-13T18:36:51.708Z",
+        "postDecisionPerceptionAt": "2026-09-13T18:36:51.781Z",
+        "postDecisionConsentFingerprint": "1c52e6584a0113f77dbb836dab81f6f0e87b1191a52d18f815199f81b831d00c",
+        "postDecisionScreenshotHash": "41a9af68eb20b827bf14cceb1a00e6878b1eeeefb2c1ed70fa18fe0ecda97f37",
+        "postDecisionScreenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        }
+      },
+      "screenshotAfter": "raw/screenshots/01-after.png",
+      "decision": {
+        "bannerDetected": true,
+        "darkPatterns": [
+          "ASYMMETRIC_EMPHASIS"
+        ],
+        "summary": "Use the explicit rejection control.",
+        "confidence": 0.99,
+        "action": {
+          "type": "CLICK_REJECT",
+          "elementId": "guardian-element-2008"
+        }
+      },
+      "safetyValidation": {
+        "allowed": true,
+        "reason": "action is narrowly scoped to consent rejection"
+      },
+      "action": {
+        "step": 1,
+        "action": "CLICK_REJECT",
+        "elementId": "guardian-element-2008",
+        "success": true,
+        "detail": "action is narrowly scoped to consent rejection"
+      },
+      "verification": {
+        "level": "LIKELY_VERIFIED",
+        "evidence": {
+          "explicitRejectActionSucceeded": true,
+          "bannerGone": true,
+          "successMessage": false,
+          "togglesRejected": false,
+          "saveActionSucceeded": false,
+          "persistedAfterRefresh": false,
+          "storageIndicatesRejection": false,
+          "details": [
+            "An explicit rejection action succeeded.",
+            "Consent interface disappeared."
+          ]
+        }
+      },
+      "continuation": "Continued with re-perception to detect another consent layer or confirm completion."
+    },
+    {
+      "step": 2,
+      "perception": {
+        "url": "https://www.theguardian.com/international",
+        "title": "Latest news, sport and opinion from the Guardian",
+        "capturedAt": "2026-09-13T18:36:52.448Z",
+        "bannerDetected": false,
+        "frames": [
+          {
+            "index": 0,
+            "url": "https://www.theguardian.com/international",
+            "name": "",
+            "accessible": true
+          },
+          {
+            "index": 1,
+            "url": "nullblank",
+            "name": "__tcfapiLocator",
+            "accessible": true
+          }
+        ],
+        "containers": [],
+        "elements": [],
+        "sanitizedText": ""
+      },
+      "screenshotBefore": "raw/screenshots/02-before.png",
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T18:36:52.448Z",
+        "frameCount": 2,
+        "screenshotHash": "89084d2de1c6a4fdc290d2da7b892b1d6eb72cd5501210590ead5cc4a8ecc219",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": true,
+        "imageAttachedToOpenAIRequest": false,
+        "modelInputConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+        "modelStartedAt": "2026-09-13T18:36:52.803Z",
+        "modelCompletedAt": "2026-09-13T18:36:52.826Z",
+        "postDecisionPerceptionAt": "2026-09-13T18:36:52.915Z",
+        "postDecisionConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+        "postDecisionScreenshotHash": "89084d2de1c6a4fdc290d2da7b892b1d6eb72cd5501210590ead5cc4a8ecc219",
+        "postDecisionScreenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        }
+      },
+      "screenshotAfter": "raw/screenshots/02-after.png",
+      "decision": {
+        "bannerDetected": false,
+        "darkPatterns": [
+          "NONE"
+        ],
+        "summary": "No visible cookie-consent interface remains.",
+        "confidence": 0.99,
+        "action": {
+          "type": "NO_BANNER"
+        }
+      },
+      "safetyValidation": {
+        "allowed": true,
+        "reason": "non-interactive terminal action"
+      },
+      "continuation": "Stopped because no further consent action was required."
+    },
+    {
+      "step": 3,
+      "telemetry": {
+        "perceptionCapturedAt": "2026-09-13T18:36:54.298Z",
+        "postDecisionPerceptionAt": "2026-09-13T18:36:54.298Z",
+        "frameCount": 2,
+        "screenshotHash": "656c85bb3510891beb176122bc97ad8e533e4ef768afaa19efc382866083519d",
+        "screenshotDimensions": {
+          "width": 1260,
+          "height": 540
+        },
+        "imageAttachedToModel": false,
+        "imageAttachedToOpenAIRequest": false,
+        "postDecisionConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431"
+      },
+      "verification": {
+        "level": "LIKELY_VERIFIED",
+        "evidence": {
+          "explicitRejectActionSucceeded": true,
+          "bannerGone": true,
+          "successMessage": false,
+          "togglesRejected": false,
+          "saveActionSucceeded": false,
+          "persistedAfterRefresh": false,
+          "storageIndicatesRejection": false,
+          "details": [
+            "An explicit rejection action succeeded.",
+            "Consent interface disappeared."
+          ]
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "initialState": {
+    "url": "https://www.theguardian.com/international",
+    "title": "Latest news, sport and opinion from the Guardian",
+    "capturedAt": "2026-09-13T18:36:50.720Z",
+    "bannerDetected": true,
+    "frames": [
+      {
+        "index": 0,
+        "url": "https://www.theguardian.com/international",
+        "name": "",
+        "accessible": true
+      },
+      {
+        "index": 1,
+        "url": "nullblank",
+        "name": "__tcfapiLocator",
+        "accessible": true
+      },
+      {
+        "index": 2,
+        "url": "https://sourcepoint.theguardian.com/index.html",
+        "name": "sp_message_iframe_1482255",
+        "accessible": true
+      }
+    ],
+    "containers": [
+      {
+        "id": "guardian-container-2001",
+        "role": "region",
+        "text": "It's your choice When we make the Guardian available to you online, we and our partners may use cookies and similar technologies to help us to do this. Some are necessary to help our website work properly and can't be switched off, and some are optional but support the Guardian and your experience in other ways. To do this we work with a cross section of 139 partners. Cookies and other similar technologies may be used to access personal data, including page visits and your IP address. We use this information about you, your devices and your online interactions with us to provide, analyse and improve our services. Depending on your choice, we may also use your data to personalise content or advertising. We use cookies and similar technologies for the following purposes: Store and/or access information on a device Personalised advertising, advertising measurement, audience research and services development Personalised content and content measurement Learn more in our privacy policy and cookie policy, and manage the choices available to you at any time by going to ‘Privacy settings’ at the bottom of any page. Are you happy to accept cookies? To manage your cookie choices now, including how to opt out where our partners rely on legitimate interests to use your information, click on Manage my cookies. Yes, I accept No, thank you Manage cookies",
+        "bounds": {
+          "x": 0,
+          "y": 265,
+          "width": 1246,
+          "height": 276
+        },
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+        "scrollTop": 0,
+        "scrollHeight": 276,
+        "clientHeight": 276,
+        "scrollable": false
+      },
+      {
+        "id": "guardian-container-2002",
+        "role": "scroll-region",
+        "text": "It's your choice When we make the Guardian available to you online, we and our partners may use cookies and similar technologies to help us to do this. Some are necessary to help our website work properly and can't be switched off, and some are optional but support the Guardian and your experience in other ways. To do this we work with a cross section of 139 partners. Cookies and other similar technologies may be used to access personal data, including page visits and your IP address. We use this information about you, your devices and your online interactions with us to provide, analyse and improve our services. Depending on your choice, we may also use your data to personalise content or advertising. We use cookies and similar technologies for the following purposes: Store and/or access information on a device Personalised advertising, advertising measurement, audience research and services development Personalised content and content measurement Learn more in our privacy policy and cookie policy, and manage the choices available to you at any time by going to ‘Privacy settings’ at the bottom of any page. Are you happy to accept cookies? To manage your cookie choices now, including how to opt out where our partners rely on legitimate interests to use your information, click on Manage my cookies.",
+        "bounds": {
+          "x": 53,
+          "y": 265,
+          "width": 1140,
+          "height": 276
+        },
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+        "scrollTop": 0,
+        "scrollHeight": 473,
+        "clientHeight": 275,
+        "scrollable": true
+      }
+    ],
+    "elements": [
+      {
+        "id": "guardian-element-2001",
+        "role": "link",
+        "name": "partners",
+        "label": "",
+        "bounds": {
+          "x": 235,
+          "y": 576,
+          "width": 56,
+          "height": 19
+        },
+        "visible": false,
+        "disabled": false,
+        "kind": "link",
+        "containerId": "guardian-container-2002",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+        "href": "https://sourcepoint.theguardian.com/index.html"
+      },
+      {
+        "id": "guardian-element-2002",
+        "role": "button",
+        "name": "Store and/or access information on a device",
+        "label": "",
+        "bounds": {
+          "x": 713,
+          "y": 410,
+          "width": 209,
+          "height": 56
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-2002",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+      },
+      {
+        "id": "guardian-element-2003",
+        "role": "button",
+        "name": "Personalised advertising, advertising measurement, audience research and services development",
+        "label": "",
+        "bounds": {
+          "x": 713,
+          "y": 479,
+          "width": 209,
+          "height": 96
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-2002",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+      },
+      {
+        "id": "guardian-element-2004",
+        "role": "button",
+        "name": "Personalised content and content measurement",
+        "label": "",
+        "bounds": {
+          "x": 713,
+          "y": 588,
+          "width": 209,
+          "height": 56
+        },
+        "visible": false,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-2002",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+      },
+      {
+        "id": "guardian-element-2005",
+        "role": "link",
+        "name": "privacy policy",
+        "label": "",
+        "bounds": {
+          "x": 1067,
+          "y": 336,
+          "width": 92,
+          "height": 19
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "link",
+        "containerId": "guardian-container-2002",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+        "href": "https://www.theguardian.com/help/privacy-policy"
+      },
+      {
+        "id": "guardian-element-2006",
+        "role": "link",
+        "name": "<span href=\"true\" target=\"_blank\" aria-label=\"message-link\">cookie policy</span>",
+        "label": "",
+        "bounds": {
+          "x": 974,
+          "y": 356,
+          "width": 86,
+          "height": 19
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "link",
+        "containerId": "guardian-container-2002",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html",
+        "href": "https://www.theguardian.com/info/cookies"
+      },
+      {
+        "id": "guardian-element-2007",
+        "role": "button",
+        "name": "Yes, I accept",
+        "label": "Yes, I accept",
+        "bounds": {
+          "x": 237,
+          "y": 481,
+          "width": 120,
+          "height": 41
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-2001",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+      },
+      {
+        "id": "guardian-element-2008",
+        "role": "button",
+        "name": "No, thank you",
+        "label": "No, thank you",
+        "bounds": {
+          "x": 369,
+          "y": 481,
+          "width": 130,
+          "height": 41
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-2001",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+      },
+      {
+        "id": "guardian-element-2009",
+        "role": "button",
+        "name": "Manage cookies",
+        "label": "Manage cookies",
+        "bounds": {
+          "x": 512,
+          "y": 481,
+          "width": 144,
+          "height": 41
+        },
+        "visible": true,
+        "disabled": false,
+        "kind": "button",
+        "containerId": "guardian-container-2001",
+        "frameIndex": 2,
+        "frameUrl": "https://sourcepoint.theguardian.com/index.html"
+      }
+    ],
+    "sanitizedText": "It's your choice When we make the Guardian available to you online, we and our partners may use cookies and similar technologies to help us to do this. Some are necessary to help our website work properly and can't be switched off, and some are optional but support the Guardian and your experience in other ways. To do this we work with a cross section of 139 partners. Cookies and other similar technologies may be used to access personal data, including page visits and your IP address. We use this information about you, your devices and your online interactions with us to provide, analyse and improve our services. Depending on your choice, we may also use your data to personalise content or advertising. We use cookies and similar technologies for the following purposes: Store and/or access information on a device Personalised advertising, advertising measurement, audience research and services development Personalised content and content measurement Learn more in our privacy policy and cookie policy, and manage the choices available to you at any time by going to ‘Privacy settings’ at the bottom of any page. Are you happy to accept cookies? To manage your cookie choices now, including how to opt out where our partners rely on legitimate interests to use your information, click on Manage my cookies. Yes, I accept No, thank you Manage cookies | It's your choice When we make the Guardian available to you online, we and our partners may use cookies and similar technologies to help us to do this. Some are necessary to help our website work properly and can't be switched off, and some are optional but support the Guardian and your experience in other ways. To do this we work with a cross section of 139 partners. Cookies and other similar technologies may be used to access personal data, including page visits and your IP address. We use this information about you, your devices and your online interactions with us to provide, analyse and improve our services. Depending on your choice, we may also use your data to personalise content or advertising. We use cookies and similar technologies for the following purposes: Store and/or access information on a device Personalised advertising, advertising measurement, audience research and services development Personalised content and content measurement Learn more in our privacy policy and cookie policy, and manage the choices available to you at any time by going to ‘Privacy settings’ at the bottom of any page. Are you happy to accept cookies? To manage your cookie choices now, including how to opt out where our partners rely on legitimate interests to use your information, click on Manage my cookies."
+  },
+  "initialScreenshot": "raw/screenshots/00-initial.png",
+  "finalScreenshot": "raw/screenshots/03-final.png",
+  "finalState": {
+    "url": "https://www.theguardian.com/international",
+    "title": "Latest news, sport and opinion from the Guardian",
+    "capturedAt": "2026-09-13T18:36:54.298Z",
+    "bannerDetected": false,
+    "frames": [
+      {
+        "index": 0,
+        "url": "https://www.theguardian.com/international",
+        "name": "",
+        "accessible": true
+      },
+      {
+        "index": 1,
+        "url": "nullblank",
+        "name": "__tcfapiLocator",
+        "accessible": true
+      }
+    ],
+    "containers": [],
+    "elements": [],
+    "sanitizedText": ""
+  },
+  "report": {
+    "startedAt": "2026-09-13T18:36:46.689Z",
+    "completedAt": "2026-09-13T18:36:54.454Z",
+    "url": "https://www.theguardian.com/international",
+    "provider": "mock",
+    "mode": "inspector",
+    "displayProfile": "custom",
+    "viewport": {
+      "width": 1260,
+      "height": 540
+    },
+    "bannerDetected": true,
+    "finalBannerDetected": false,
+    "finalStateCapturedAt": "2026-09-13T18:36:54.298Z",
+    "finalConsentFingerprint": "b6da6507e36a0337b889124ea9bf54bd3a811477d79c965fe12e48de3d9aa431",
+    "darkPatterns": [
+      "ASYMMETRIC_EMPHASIS"
+    ],
+    "actions": [
+      {
+        "step": 1,
+        "action": "CLICK_REJECT",
+        "elementId": "guardian-element-2008",
+        "success": true,
+        "detail": "action is narrowly scoped to consent rejection"
+      }
+    ],
+    "safetyStops": [],
+    "verification": {
+      "level": "LIKELY_VERIFIED",
+      "evidence": {
+        "explicitRejectActionSucceeded": true,
+        "bannerGone": true,
+        "successMessage": false,
+        "togglesRejected": false,
+        "saveActionSucceeded": false,
+        "persistedAfterRefresh": false,
+        "storageIndicatesRejection": false,
+        "details": [
+          "An explicit rejection action succeeded.",
+          "Consent interface disappeared."
+        ]
+      }
+    },
+    "artifactDirectory": "C:\\Users\\Greeshma\\OneDrive\\Desktop\\dark-pattern-guardian\\artifacts\\run-2026-09-13T18-36-46-689Z"
+  }
+}

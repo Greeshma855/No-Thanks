@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Custom consent toggle proxies</title>
+    <style>
+      body {
+        margin: 0;
+        font: 16px system-ui;
+      }
+      nav,
+      main {
+        padding: 24px 48px;
+      }
+      .banner,
+      .modal {
+        position: fixed;
+        inset: 0;
+        background: #0008;
+        display: grid;
+        place-items: center;
+      }
+      .card {
+        width: min(680px, 92vw);
+        max-height: 82vh;
+        padding: 24px;
+        background: white;
+      }
+      .scrollbox {
+        max-height: 260px;
+        overflow-y: auto;
+        border: 1px solid #94a3b8;
+      }
+      .row {
+        min-height: 118px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 16px;
+        border-bottom: 1px solid #ddd;
+      }
+      .category {
+        border: 0;
+        background: transparent;
+        text-align: left;
+        font: inherit;
+        font-weight: 700;
+      }
+      .control input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+      }
+      .switch {
+        display: block;
+        width: 52px;
+        height: 28px;
+        border-radius: 999px;
+        background: #2563eb;
+        cursor: pointer;
+      }
+      .control input:not(:checked) + .switch {
+        background: #64748b;
+      }
+      .control input:disabled + .switch {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+      .save-bar {
+        position: sticky;
+        bottom: 0;
+        padding-top: 16px;
+        background: white;
+      }
+      button {
+        padding: 12px 16px;
+      }
+      [hidden] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body data-consent-state="pending">
+    <nav><a href="/news">News</a> <button>Subscribe</button></nav>
+    <main>
+      <h1>Background publication page</h1>
+      <button>Open video</button>
+    </main>
+    <section class="banner" data-cookie-banner role="dialog" aria-label="Cookie notice">
+      <div class="card">
+        <h2>Cookie choices</h2>
+        <p>Choose whether optional analytics and advertising cookies may be used.</p>
+        <button id="open">Cookie preferences</button>
+        <button>Allow all</button>
+      </div>
+    </section>
+    <section
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Privacy Preference Center"
+      hidden
+    >
+      <div class="card">
+        <h2>Privacy Preference Center</h2>
+        <div class="scrollbox">
+          <div class="row">
+            <button class="category" aria-controls="necessary-info">
+              Strictly Necessary Cookies — Always Active
+            </button>
+            <span class="control"
+              ><input
+                id="necessary"
+                type="checkbox"
+                checked
+                disabled
+                aria-label="Strictly Necessary Cookies" /><label
+                class="switch"
+                for="necessary"
+              ></label
+            ></span>
+          </div>
+          <div class="row">
+            <button class="category" aria-controls="performance-info">
+              Performance Cookies - Third Parties
+            </button>
+            <span class="control"
+              ><input
+                id="performance"
+                type="checkbox"
+                checked
+                aria-label="Performance Cookies - Third Parties" /><label
+                class="switch"
+                for="performance"
+              ></label
+            ></span>
+          </div>
+          <div class="row">
+            <button class="category" aria-controls="functional-info">Functional Cookies</button>
+            <span class="control"
+              ><input
+                id="functional"
+                type="checkbox"
+                checked
+                hidden
+                aria-label="Functional Cookies" /><button
+                class="switch"
+                role="switch"
+                aria-checked="true"
+                aria-controls="functional"
+                aria-label="Functional Cookies switch"
+              ></button
+            ></span>
+          </div>
+          <div class="row">
+            <button class="category" aria-controls="targeting-info">
+              Targeting and Advertising Cookies
+            </button>
+            <span class="control"
+              ><input
+                id="targeting"
+                type="checkbox"
+                checked
+                aria-label="Targeting and Advertising Cookies" /><label
+                class="switch"
+                for="targeting"
+              ></label
+            ></span>
+          </div>
+          <div class="row">
+            <button class="category" aria-controls="social-info">Social Media Cookies</button>
+            <span class="control"
+              ><input id="social" type="checkbox" checked aria-label="Social Media Cookies" /><label
+                class="switch"
+                for="social"
+              ></label
+            ></span>
+          </div>
+        </div>
+        <div class="save-bar"><button id="save">Confirm My Choices</button></div>
+      </div>
+    </section>
+    <script>
+      const banner = document.querySelector('.banner');
+      const modal = document.querySelector('.modal');
+      if (localStorage.getItem('guardianConsent') === 'rejected') {
+        document.body.dataset.consentState = 'rejected';
+        banner.remove();
+        modal.remove();
+      }
+      document.querySelector('#open')?.addEventListener('click', () => {
+        banner.hidden = true;
+        modal.hidden = false;
+      });
+      document.querySelector('[aria-controls="functional"]')?.addEventListener('click', (event) => {
+        const input = document.querySelector('#functional');
+        input.checked = !input.checked;
+        event.currentTarget.setAttribute('aria-checked', String(input.checked));
+      });
+      document.querySelector('#save')?.addEventListener('click', () => {
+        const optional = [...document.querySelectorAll('.control input:not(:disabled)')];
+        if (optional.every((toggle) => !toggle.checked)) {
+          localStorage.setItem('guardianConsent', 'rejected');
+          document.body.dataset.consentState = 'rejected';
+          modal.remove();
+          banner.remove();
+        }
+      });
+    </script>
+  </body>
+</html>

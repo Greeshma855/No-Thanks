@@ -1,0 +1,37 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+build/
+
+# Local environments, credentials, and secrets
+.env
+.env.local
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+
+# Local caches and runtime artifacts
+.dpg/
+artifacts/
+*.log
+
+# Test and coverage output
+playwright-report/
+test-results/
+coverage/
+
+# Redundant architecture exports and temporary files
+architecture_simple.md.svg
+*.tmp
+
+# Submission assets must remain trackable
+!sample-output/
+!sample-output/**
+!architecture-simple.png
+!architecture-detailed.png
+
+# Architecture source and vector exports
+*.mmd
+*.svg

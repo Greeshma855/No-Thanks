@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Consent with dynamic advertising frame</title>
+  </head>
+  <body data-consent-state="pending">
+    <main>
+      <h1>Changing news page</h1>
+      <div id="ads"></div>
+    </main>
+    <section data-cookie-banner role="dialog" aria-label="Cookie choices">
+      <p>Choose whether cookies may be used for analytics and advertising.</p>
+      <button id="reject">Reject all</button><button>Accept all</button>
+    </section>
+    <script>
+      const banner = document.querySelector('[data-cookie-banner]');
+      if (localStorage.getItem('guardianConsent') === 'rejected') {
+        document.body.dataset.consentState = 'rejected';
+        banner.remove();
+      } else {
+        document.querySelector('#reject').addEventListener('click', () => {
+          localStorage.setItem('guardianConsent', 'rejected');
+          document.body.dataset.consentState = 'rejected';
+          banner.remove();
+        });
+      }
+      setTimeout(() => {
+        const frame = document.createElement('iframe');
+        frame.name = 'advertisement';
+        frame.srcdoc = '<p>Animated advertisement</p>';
+        document.querySelector('#ads').append(frame);
+      }, 100);
+    </script>
+  </body>
+</html>

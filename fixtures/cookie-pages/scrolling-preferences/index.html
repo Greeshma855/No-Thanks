@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Scrollable consent preferences</title>
+    <style>
+      body {
+        margin: 0;
+        font: 16px system-ui;
+      }
+      main {
+        min-height: 100vh;
+        padding: 60px;
+        background: #ecfeff;
+      }
+      .banner,
+      .modal {
+        position: fixed;
+        inset: 0;
+        background: #0008;
+        display: grid;
+        place-items: center;
+      }
+      .banner-card,
+      .panel {
+        width: min(620px, 90vw);
+        padding: 24px;
+        background: white;
+      }
+      .scrollbox {
+        height: 230px;
+        overflow-y: auto;
+        border: 1px solid #94a3b8;
+      }
+      .category {
+        min-height: 190px;
+        padding: 24px;
+        border-bottom: 1px solid #cbd5e1;
+      }
+      [role='switch'] {
+        width: 58px;
+        height: 30px;
+      }
+      .save-bar {
+        position: sticky;
+        bottom: 0;
+        padding-top: 16px;
+        background: white;
+      }
+      .save-bar button,
+      .banner button {
+        padding: 12px 18px;
+      }
+      [hidden] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body data-consent-state="pending">
+    <main><h1>Scrollable preferences demo</h1></main>
+    <section class="banner" data-cookie-banner role="dialog" aria-label="Cookie notice">
+      <div class="banner-card">
+        <h2>Cookie choices</h2>
+        <p>Choose optional analytics and advertising cookies.</p>
+        <button id="open">Cookie preferences</button><button id="accept">Accept all</button>
+      </div>
+    </section>
+    <section class="modal" role="dialog" aria-modal="true" aria-label="Privacy preferences" hidden>
+      <div class="panel">
+        <h2>Privacy preferences</h2>
+        <div class="scrollbox" tabindex="0">
+          <section class="category">
+            <h3>Analytics cookies</h3>
+            <button role="switch" aria-checked="true"></button>
+          </section>
+          <section class="category">
+            <h3>Advertising cookies</h3>
+            <button role="switch" aria-checked="true"></button>
+          </section>
+          <section class="category">
+            <h3>Strictly necessary cookies</h3>
+            <button role="switch" aria-checked="true" disabled></button>
+          </section>
+        </div>
+        <div class="save-bar"><button id="save">Confirm choices</button></div>
+      </div>
+    </section>
+    <script>
+      const banner = document.querySelector('.banner');
+      const modal = document.querySelector('.modal');
+      const scrollbox = document.querySelector('.scrollbox');
+      if (localStorage.getItem('guardianConsent') === 'rejected') {
+        document.body.dataset.consentState = 'rejected';
+        banner.remove();
+        modal.remove();
+      }
+      document.querySelector('#open')?.addEventListener('click', () => {
+        banner.hidden = true;
+        modal.hidden = false;
+      });
+      document.querySelectorAll('[role="switch"]:not([disabled])').forEach((toggle) =>
+        toggle.addEventListener('click', () => {
+          toggle.setAttribute(
+            'aria-checked',
+            toggle.getAttribute('aria-checked') === 'true' ? 'false' : 'true',
+          );
+        }),
+      );
+      document.querySelector('#save')?.addEventListener('click', () => {
+        const optional = [...document.querySelectorAll('[role="switch"]:not([disabled])')];
+        if (optional.every((toggle) => toggle.getAttribute('aria-checked') === 'false')) {
+          localStorage.setItem('guardianConsent', 'rejected');
+          document.body.dataset.consentState = 'rejected';
+          modal.remove();
+          banner.remove();
+        }
+      });
+      if (new URLSearchParams(location.search).get('open') === '1') {
+        banner.hidden = true;
+        modal.hidden = false;
+        requestAnimationFrame(() => {
+          scrollbox.scrollTop = scrollbox.scrollHeight;
+        });
+      }
+    </script>
+  </body>
+</html>

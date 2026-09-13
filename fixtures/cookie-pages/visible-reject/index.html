@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Northstar Journal</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font: 16px system-ui;
+        color: #172033;
+        background: #f4f1ea;
+      }
+      header {
+        padding: 24px 8%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+      }
+      main {
+        max-width: 850px;
+        margin: 80px auto;
+        padding: 20px;
+      }
+      h1 {
+        font: 64px Georgia;
+        margin: 0 0 20px;
+      }
+      .cookie-card {
+        position: fixed;
+        left: 5%;
+        right: 5%;
+        bottom: 28px;
+        background: #14213d;
+        color: white;
+        padding: 25px 28px;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px #0005;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 25px;
+        align-items: center;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+      }
+      .accept {
+        background: #fca311;
+        color: #111;
+        border: 0;
+        padding: 15px 25px;
+        border-radius: 10px;
+        font-weight: 800;
+      }
+      .reject {
+        background: transparent;
+        color: #c7d2fe;
+        border: 1px solid #7784a8;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body data-consent-state="pending">
+    <header><b>NORTHSTAR</b><span>Independent culture</span></header>
+    <main>
+      <h1>Stories worth your attention.</h1>
+      <p>A quiet fixture page for testing a visually asymmetric cookie banner.</p>
+    </main>
+    <section class="cookie-card" data-cookie-banner role="dialog" aria-label="Cookie consent">
+      <div>
+        <b>Your choices matter</b>
+        <p>
+          We use cookies for analytics and personalized advertising. You can accept or reject
+          non-essential tracking.
+        </p>
+      </div>
+      <div class="actions">
+        <button class="reject">Reject All</button><button class="accept">Accept All</button>
+      </div>
+    </section>
+    <script>
+      const banner = document.querySelector('[data-cookie-banner]');
+      const saved = localStorage.getItem('guardianConsent');
+      if (saved === 'rejected') {
+        banner.remove();
+        document.body.dataset.consentState = 'rejected';
+      }
+      document.querySelector('.reject')?.addEventListener('click', () => {
+        localStorage.setItem('guardianConsent', 'rejected');
+        document.body.dataset.consentState = 'rejected';
+        banner.remove();
+      });
+      document.querySelector('.accept')?.addEventListener('click', () => {
+        localStorage.setItem('guardianConsent', 'accepted');
+        document.body.dataset.consentState = 'accepted';
+        banner.remove();
+      });
+    </script>
+  </body>
+</html>

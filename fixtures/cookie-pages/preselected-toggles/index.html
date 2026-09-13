@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Signal Arcade</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #090414;
+        color: #f6edff;
+        font: 16px system-ui;
+        overflow: hidden;
+      }
+      .grid {
+        height: 100vh;
+        background-image:
+          linear-gradient(#a855f722 1px, transparent 1px),
+          linear-gradient(90deg, #a855f722 1px, transparent 1px);
+        background-size: 45px 45px;
+        padding: 50px;
+      }
+      h1 {
+        font-size: 78px;
+        color: #33f7d0;
+        text-shadow: 4px 4px #9b26e8;
+      }
+      .settings {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 480px;
+        background: #161126;
+        padding: 38px;
+        box-shadow: -20px 0 80px #000;
+        overflow: auto;
+      }
+      .pill {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #493a65;
+      }
+      .pill input {
+        width: 48px;
+        height: 24px;
+        accent-color: #33f7d0;
+      }
+      .save {
+        width: 100%;
+        padding: 16px;
+        margin-top: 25px;
+        background: #33f7d0;
+        border: 0;
+        border-radius: 8px;
+        font-weight: 900;
+      }
+      .necessary {
+        opacity: 0.55;
+      }
+    </style>
+  </head>
+  <body data-consent-state="pending">
+    <div class="grid">
+      <b>SIGNAL // ARCADE</b>
+      <h1>PLAY<br />FOREVER</h1>
+    </div>
+    <aside class="settings" data-cookie-banner role="dialog" aria-label="Cookie settings">
+      <h2>Cookie control center</h2>
+      <p>Analytics and advertising are enabled by default to improve your experience.</p>
+      <label class="pill necessary" for="required"
+        >Strictly necessary <input id="required" type="checkbox" checked disabled /></label
+      ><label class="pill" for="analytics"
+        >Analytics tracking <input id="analytics" type="checkbox" checked /></label
+      ><label class="pill" for="advertising"
+        >Personalized advertising <input id="advertising" type="checkbox" checked /></label
+      ><button class="save">Save Preferences</button>
+    </aside>
+    <script>
+      const panel = document.querySelector('.settings');
+      if (localStorage.getItem('guardianConsent') === 'rejected') {
+        panel.remove();
+        document.body.dataset.consentState = 'rejected';
+      }
+      document.querySelector('.save')?.addEventListener('click', () => {
+        const rejected =
+          !document.querySelector('#analytics').checked &&
+          !document.querySelector('#advertising').checked;
+        if (rejected) {
+          localStorage.setItem('guardianConsent', 'rejected');
+          document.body.dataset.consentState = 'rejected';
+          panel.remove();
+        } else {
+          localStorage.setItem('guardianConsent', 'partial');
+        }
+      });
+    </script>
+  </body>
+</html>

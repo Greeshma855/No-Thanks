@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CMP</title>
+  </head>
+  <body>
+    <section data-cookie-banner role="dialog" aria-label="Cookie consent manager">
+      <p>Choose whether analytics and advertising cookies may be stored.</p>
+      <button id="reject">Reject all</button>
+      <button>Accept all</button>
+    </section>
+    <script>
+      document.querySelector('#reject').addEventListener('click', () => {
+        document.body.dataset.consentState = 'rejected';
+        document.querySelector('[data-cookie-banner]').remove();
+      });
+    </script>
+  </body>
+</html>
