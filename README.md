@@ -99,7 +99,7 @@ Regular users will not launch terminal scripts or separate Playwright sessions. 
 
 **Al Jazeera: Bounding boxes, visual reasoning, privacy controls, and live verification.**
 
-[![Watch the headed Al Jazeera demo](sample-output/al-jazeera-headed/raw/screenshots/00-initial.png)](YOUR_YOUTUBE_OR_LOOM_LINK_HERE)
+[![Watch the headed Al Jazeera demo](sample-output/al-jazeera-headed/raw/screenshots/00-initial.png)](https://youtu.be/qIbm-Ks4NIQ)
 
 The Inspector overlay makes each step visible. Registered controls receive internal IDs, optional cookie categories are disabled, and the final capture confirms banner removal.
 
@@ -107,7 +107,7 @@ The Inspector overlay makes each step visible. Registered controls receive inter
 
 **Fast background execution with no visual overlay or presentation delay.**
 
-[![Headless Demo Screenshot](sample-output/al-jazeera-headless/raw/screenshots/02-before.png)](YOUR_YOUTUBE_OR_LOOM_LINK_HERE)
+[![Headless Demo Screenshot](sample-output/al-jazeera-headless/raw/screenshots/02-before.png)](https://youtu.be/rx1-FUpSYHI)
 
 Headless mode optimizes for unattended execution using the same safety and verification pipeline. The action path completes in roughly five seconds once a consent surface is ready. All test cases are indexed in [`sample-output/`](sample-output/README.md).
 
